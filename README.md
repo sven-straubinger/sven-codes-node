@@ -1,2 +1,2 @@
 # sven-codes-node
-Source code of 'sven.codes' website.
+Source code of the "sven.codes" website.
