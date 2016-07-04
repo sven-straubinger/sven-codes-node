@@ -1,0 +1,24 @@
+{
+  "name": "sven-codes-node",
+  "version": "1.0.0",
+  "description": "Source code of the \"sven.codes\" website. http://sven.codes",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sven-straubinger/sven-codes-node.git"
+  },
+  "keywords": [
+    "Sven",
+    "Straubinger",
+    "Berlin"
+  ],
+  "author": "Sven Straubinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sven-straubinger/sven-codes-node/issues"
+  },
+  "homepage": "https://github.com/sven-straubinger/sven-codes-node#readme"
+}
