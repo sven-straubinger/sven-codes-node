@@ -1,8 +1,9 @@
-/* Main.js – sven.codes */
-
-// Init modules
 var fs = require('fs');
+var path = require('path');
+var logger = require('morgan');
 var express = require('express');
+var favicon = require('serve-favicon');
+var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser')
 
 // Init app
