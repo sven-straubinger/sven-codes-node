@@ -5,7 +5,7 @@ var express = require('express');
 // Init router
 var router = express.Router();
 
-// GET API
+// GET requests
 router.get('/', function(req, res, next) {
     fs.readFile(path.resolve("individuals.json"), "utf8", function(err, data) {
         res.header("Content-Type", "application/json");
