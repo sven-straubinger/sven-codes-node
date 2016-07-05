@@ -12,12 +12,17 @@ var routeApi = require('./routes/api');
 
 // Init app
 var app = express();
-app.use(express.static('public')); // Set static folder
-app.use(cookieParser()); // Set cookie parser
 
 // Setup view engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+// Defaults
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static('public')); // Set static folder
+app.use(cookieParser()); // Set cookie parser
 
 // Set favicon
 app.use(favicon(path.join(__dirname, 'public/images', 'favicon.png')));
