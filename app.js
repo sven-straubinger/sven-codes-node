@@ -15,6 +15,10 @@ var app = express();
 app.use(express.static('public')); // Set static folder
 app.use(cookieParser()); // Set cookie parser
 
+// Setup view engine
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
 // Route
 app.use('/', routeIndex);
 app.use('/api/individuals/*', routeApi);
