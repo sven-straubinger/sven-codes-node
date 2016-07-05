@@ -1,8 +1,8 @@
 # sven-codes-node
 Source code of the [sven.codes](http://sven.codes) website written in Node.js and AngularJS.
 
-## Run
+## Install
 
-1. Checkout project
-2. Change to project folder
+1. Install [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com)
+2. Checkout project
 3. Run `node app.js`
