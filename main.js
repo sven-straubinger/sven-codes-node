@@ -1,32 +1,17 @@
 /* Main.js – sven.codes */
 
-// Modules
-var http = require('http');
-var fs = require('fs');
-var url = require('url');
+var express = require('express');
+var app = express();
 
-// Constants
-var Port = 8081;
-var ContentTypeHtml = {'Content-Type': 'text/html'};
+app.get('/', function(req, res) {
+    res.send('Welcome');
+})
 
-// Server
-http.createServer(function(request, response) {
-    // Parse request
-    var pathname = url.parse(request.url).pathname;
+var server = app.listen(8081, function() {
 
-    console.log("Request for " + pathname + " received.");
+    var host = server.address().address
+    var port = server.address().port
 
-    fs.readFile(pathname.substr(1), function(err, data){
-        if(err) {
-            response.writeHead(404, ContentTypeHtml);
-            response.write("Not found.");
-        } else {
-            response.writeHead(200, ContentTypeHtml);
-            response.write(data.toString());
-        }
-        response.end();
-    });
+    console.log("Listening on http://$s:%s", host, port)
 
-}).listen(Port)
-
-console.log('Server running at http://localhost:' + Port + '/');
+})
