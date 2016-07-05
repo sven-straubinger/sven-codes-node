@@ -6,24 +6,18 @@ var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser')
 
+// Setup routes
+var routeIndex = require('./routes/index');
+var routeApi = require('./routes/api');
+
 // Init app
 var app = express();
 app.use(express.static('public')); // Set static folder
 app.use(cookieParser()); // Set cookie parser
 
-// Route frontpage
-app.get('/', function(req, res) {
-    console.log("Cookies: ", req.cookies)
-    res.sendFile( __dirname + "/" + "index.html" );
-})
-
-// Route RESTful API
-app.get('/api/individuals/*', function(req, res) {
-    fs.readFile(__dirname + "/" + "individuals.json", "utf8", function(err, data) {
-        res.header("Content-Type", "application/json");
-        res.end(data);
-    });
-})
+// Route
+app.use('/', routeIndex);
+app.use('/api/individuals/*', routeApi);
 
 // Init server
 var server = app.listen(8081, function() {
