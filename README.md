@@ -5,4 +5,4 @@ Source code of the [sven.codes](http://sven.codes) website written in Node.js an
 
 1. Install [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com)
 2. Checkout project
-3. Run `node app.js`
+3. Run in terminal: `node app.js`
