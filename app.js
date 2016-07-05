@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser')
 
 // Setup routes
-var routeIndex = require('./routes/index');
+var routeFrontpage = require('./routes/frontpage');
 var routeApi = require('./routes/api');
 
 // Init app
@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // Route
-app.use('/', routeIndex);
+app.use('/', routeFrontpage);
 app.use('/api/individuals/*', routeApi);
 
 // Init server
