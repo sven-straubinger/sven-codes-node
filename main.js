@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 // Route for frontpage
 app.get('/', function(req, res) {
-    res.send('Welcome');
+    res.sendFile( __dirname + "/" + "index.html" );
 })
 
 // Init server
