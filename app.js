@@ -19,6 +19,9 @@ app.use(cookieParser()); // Set cookie parser
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+// Set favicon
+app.use(favicon(path.join(__dirname, 'public/images', 'favicon.png')));
+
 // Route
 app.use('/', routeFrontpage);
 app.use('/api/individuals/*', routeApi);
