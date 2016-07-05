@@ -2,13 +2,16 @@
 
 // Init modules
 var express = require('express');
-var app = express();
+var cookieParser = require('cookie-parser')
 
-// Define static folder
-app.use(express.static('public'));
+// Init app
+var app = express();
+app.use(express.static('public')); // Set static folder
+app.use(cookieParser()); // Set cookie parser
 
 // Route for frontpage
 app.get('/', function(req, res) {
+    console.log("Cookies: ", req.cookies)
     res.sendFile( __dirname + "/" + "index.html" );
 })
 
