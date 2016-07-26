@@ -4,8 +4,9 @@
     <title>sven.codes</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="/javascripts/frontpage.js"></script>
   </head>
-  <body>
+  <body ng-controller="IndividualListController">
     <header>
       <!-- some navigation -->
     </header>
@@ -19,6 +20,12 @@
     <input ng-model="name"> Hello {{ name }}
 
     <hr>
+
+    <ul>
+      <li ng-repeat="individual in individuals">
+        <span>{{individual.slug}}</span>
+      </li>
+    </ul>
 
     <footer>
       <p>Made with <a href="https://nodejs.org/en/" target="_blank">node</a>, <a href="https://angularjs.org" target="_blank">angular</a> and <a href="http://sven.codes" target="_blank">&#10084</a>.</p>
