@@ -31,12 +31,4 @@ app.use(favicon(path.join(__dirname, 'public/images', 'favicon.png')));
 app.use('/', routeFrontpage);
 app.use('/api/individuals/*', routeApi);
 
-// Init server
-var server = app.listen(8081, function() {
-    var host = server.address().address
-    var port = server.address().port
-
-    console.log("Listening on http://$s:%s", host, port)
-})
-
 module.exports = app;
