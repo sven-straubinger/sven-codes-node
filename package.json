@@ -5,6 +5,7 @@
   "description": "Source code of the \"sven.codes\" website. http://sven.codes",
   "main": "app.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
