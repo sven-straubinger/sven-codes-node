@@ -14,3 +14,4 @@ Source code of the [sven.codes](http://sven.codes) website written in Node.js an
 * 404 and 500 status code handling
 * Caching
 * Put Angular file to end of body, use `ng-cloak` or `ng-bind` to avoid blinking content
+* Add bootstrap / add HTML5 boilerplate
