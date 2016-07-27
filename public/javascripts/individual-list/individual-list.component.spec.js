@@ -3,7 +3,7 @@
 describe('individualList', function() {
 
   // Load the module that contains the `individualList` component before each test
-  beforeEach(module('svenCodesNode'));
+  beforeEach(module('individualList'));
 
   // Test the controller
   describe('IndividualListController', function() {
