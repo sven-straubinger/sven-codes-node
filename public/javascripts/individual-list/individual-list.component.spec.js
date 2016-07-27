@@ -1,3 +1,5 @@
+'use strict';
+
 describe('individualList', function() {
 
   // Load the module that contains the `individualList` component before each test

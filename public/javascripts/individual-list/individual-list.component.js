@@ -2,14 +2,9 @@
 
 // Register component
 angular.
-  module('svenCodesNode').
+  module('individualList').
   component('individualList', {
-    template:
-        '<ul>' +
-          '<li ng-repeat="individual in $ctrl.individuals">' +
-            '<span>{{individual.slug}}</span>' +
-          '</li>' +
-        '</ul>',
+    templateUrl: '/javascripts/individual-list/individual-list.template.html', // Note: The URL is relative to our `frontpage.html` file
     controller: function IndividualListController() {
       this.individuals = [
         {
