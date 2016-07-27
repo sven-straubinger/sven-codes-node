@@ -22,6 +22,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public')); // Set static folder
+app.use('/angular', express.static(__dirname + '/node_modules/angular')); // TODO: Consider copying angular to the `public` folder
 app.use(cookieParser()); // Set cookie parser
 
 // Set favicon
