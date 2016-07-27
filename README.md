@@ -23,3 +23,4 @@ Angular Unit tests are achieved by `Karma`. Run `npm test-client` or `npm test-c
 * Bundle JavaScript files
 * Fix naming and folder structure for Angular related files, review express/angular generator
 * Setup E2E tests with protractor
+* check against via yeoman: generator-angular
