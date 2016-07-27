@@ -18,5 +18,8 @@ angular.
           order: 2
         }
       ];
+
+      this.orderProp = 'order';
+
     }
   });
