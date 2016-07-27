@@ -10,7 +10,6 @@ angular
         this.slug = $routeParams.slug;
 
         $http.get('javascripts/data/individuals.json').then(function(response) {
-          alert(self.slug + ": " + JSON.stringify(response));
           self.individuals = response.data;
         });
 
