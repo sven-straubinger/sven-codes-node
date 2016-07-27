@@ -6,12 +6,11 @@
     <script src="/angular/angular.js"></script>
     <script src="/angular-route/angular-route.js"></script>
     <script src="/javascripts/frontpage.module.js"></script>
+    <script src="/javascripts/frontpage.config.js"></script>
     <script src="/javascripts/individual-list/individual-list.module.js"></script>
     <script src="/javascripts/individual-list/individual-list.component.js"></script>
   </head>
   <body>
-
-    <div ng-view></div>
 
     <header>
       <!-- some navigation -->
@@ -22,6 +21,8 @@
     <input ng-model="name">
 
     <hr>
+
+    <div ng-view></div>
 
     <footer>
       <p>Made with <a href="https://nodejs.org/en/" target="_blank">node</a>, <a href="https://angularjs.org" target="_blank">angular</a> and <a href="http://sven.codes" target="_blank">&#10084</a>.</p>
