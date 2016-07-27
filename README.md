@@ -20,3 +20,4 @@ Angular tests are achieved by `Karma`. Run `npm test-client` or `npm test-client
 * Put Angular file to end of body, use `ng-cloak` or `ng-bind` to avoid blinking content
 * Add bootstrap / add HTML5 boilerplate
 * Rename `individual` to `profile`
+* Bundle JavaScript files
