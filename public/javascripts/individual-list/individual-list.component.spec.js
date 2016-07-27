@@ -8,17 +8,28 @@ describe('individualList', function() {
   // Test the controller
   describe('IndividualListController', function() {
 
-    var ctrl;
+    // We configure "fake" responses to server requests by calling methods on a mock service called $httpBackend
+    var $httpBackend, ctrl;
 
-    beforeEach(inject(function($componentController) {
+    // The injector ignores leading and trailing underscores here (i.e. _$httpBackend_).
+    // This allows us to inject a service and assign it to a variable with the same name
+    // as the service while avoiding a name conflict.
+    beforeEach(inject(function($componentController, _$httpBackend_) {
+      $httpBackend = _$httpBackend_;
+      $httpBackend.expectGET('javascripts/data/individuals.json')
+                  .respond([{slug: 'Axel'}, {slug: 'Sven'}]);
+
       ctrl = $componentController('individualList');
     }));
 
-    it('should create a `individual` model with 3 individuals', function() {
-      expect(ctrl.individuals.length).toBe(3);
+    it('should create a `individuals` property with 2 individuals fetched with `$http`', function() {
+      expect(ctrl.individuals).toBeUndefined();
+
+      $httpBackend.flush();
+      expect(ctrl.individuals).toEqual([{slug: 'Axel'}, {slug: 'Sven'}]);
     });
 
-    it('should set default value for `orderProp` model', function() {
+    it('should set a default value for the `orderProp` property', function() {
       expect(ctrl.orderProp).toBe('order');
     });
 
