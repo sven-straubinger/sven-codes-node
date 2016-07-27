@@ -7,7 +7,9 @@
   "scripts": {
     "debug": "DEBUG=sven-codes-node:* node ./bin/www",
     "start": "node ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-client": "karma start karma.conf.js",
+    "test-client-single-run": "karma start karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "homepage": "https://github.com/sven-straubinger/sven-codes-node#readme",
   "dependencies": {
+    "angular": "^1.5.8",
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
@@ -33,5 +36,12 @@
     "pug": "^2.0.0-beta3",
     "serve-favicon": "^2.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "angular-mocks": "^1.5.8",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.2",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2"
+  }
 }

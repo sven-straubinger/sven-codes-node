@@ -9,6 +9,10 @@ Source code of the [sven.codes](http://sven.codes) website written in Node.js an
 4. Run `npm run-script debug` while developing
 5. Run `npm start` for production
 
+## Testing
+
+Angular tests are achieved by `Karma`. Run `npm test-client` or `npm test-client-single-run`.
+
 ## TODOs
 
 * 404 and 500 status code handling
