@@ -21,3 +21,4 @@ Angular tests are achieved by `Karma`. Run `npm test-client` or `npm test-client
 * Add bootstrap / add HTML5 boilerplate
 * Rename `individual` to `profile`
 * Bundle JavaScript files
+* Fix naming and folder structure for Angular related files, review express/angular generator
