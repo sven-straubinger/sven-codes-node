@@ -3,15 +3,26 @@
     <div class="col-md-2">
       <!--Sidebar content-->
 
-      Search: <input ng-model="$ctrl.query" />
+      <p>
+        Search:
+        <input ng-model="$ctrl.query">
+      </p>
+
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="slug">Alphabetical</option>
+          <option value="order">Order Number</option>
+        </select>
+      </p>
 
     </div>
     <div class="col-md-10">
       <!--Body content-->
 
       <ul class="individuals">
-        <li ng-repeat="individual in $ctrl.individuals | filter:$ctrl.query">
-          <span>{{individual.slug}}</span>
+        <li ng-repeat="individual in $ctrl.individuals | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+          <span>{{individual.slug}} ({{individual.order}})</span>
         </li>
       </ul>
 

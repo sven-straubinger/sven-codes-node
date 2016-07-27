@@ -8,11 +8,14 @@ angular.
     controller: function IndividualListController() {
       this.individuals = [
         {
-          slug: 'Nexus S'
+          slug: 'Nexus S',
+          order: 1
         }, {
-          slug: 'Motorola XOOM™ with Wi-Fi'
+          slug: 'Motorola XOOM™ with Wi-Fi',
+          order: 3
         }, {
-          slug: 'MOTOROLA XOOM™'
+          slug: 'MOTOROLA XOOM™',
+          order: 2
         }
       ];
     }
