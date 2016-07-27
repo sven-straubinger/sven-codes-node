@@ -11,7 +11,7 @@ angular
 
         $http.get('javascripts/data/individuals.json').then(function(response) {
           alert(self.slug + ": " + JSON.stringify(response));
-          self.individual =response[0];
+          self.individuals = response.data;
         });
 
       }
