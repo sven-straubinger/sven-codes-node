@@ -11,7 +11,7 @@ Source code of the [sven.codes](http://sven.codes) website written in Node.js an
 
 ## Testing
 
-Angular tests are achieved by `Karma`. Run `npm test-client` or `npm test-client-single-run`.
+Angular Unit tests are achieved by `Karma`. Run `npm test-client` or `npm test-client-single-run`.
 
 ## TODOs
 
@@ -22,3 +22,4 @@ Angular tests are achieved by `Karma`. Run `npm test-client` or `npm test-client
 * Rename `individual` to `profile`
 * Bundle JavaScript files
 * Fix naming and folder structure for Angular related files, review express/angular generator
+* Setup E2E tests with protractor
