@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
     <script src="/angular/angular.js"></script>
     <script src="/javascripts/frontpage.js"></script>
+    <script src="/javascripts/individual-list.component.js"></script>
   </head>
-  <body ng-controller="IndividualListController">
+  <body>
     <header>
       <!-- some navigation -->
     </header>
@@ -21,11 +22,8 @@
 
     <hr>
 
-    <ul>
-      <li ng-repeat="individual in individuals">
-        <span>{{individual.slug}}</span>
-      </li>
-    </ul>
+    <!-- Use a custom component to render a list of individuals -->
+    <individual-list></individual-list>
 
     <footer>
       <p>Made with <a href="https://nodejs.org/en/" target="_blank">node</a>, <a href="https://angularjs.org" target="_blank">angular</a> and <a href="http://sven.codes" target="_blank">&#10084</a>.</p>
