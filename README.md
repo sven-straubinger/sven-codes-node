@@ -11,7 +11,9 @@ Source code of the [sven.codes](http://sven.codes) website written in Node.js an
 
 ## Testing
 
-Angular Unit tests are achieved by `Karma`. Run `npm test-client` or `npm test-client-single-run`.
+Angular Unit tests are achieved by `Karma`.
+* Run `npm run-script test-client` for hot reloaded testing
+* Run `npm run-script test-client-single-run` for a single test run
 
 ## TODOs
 
