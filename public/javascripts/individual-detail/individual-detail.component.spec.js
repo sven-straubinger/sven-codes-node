@@ -19,6 +19,10 @@ describe('individualDetail', function() {
       expect(ctrl.slug).toBe('some-slug');
     });
 
+    it('should set a placeholder to the main image url', function() {
+      expect(ctrl.mainImageUrl).toBe('some-slug');
+    });
+
   });
 
 });
