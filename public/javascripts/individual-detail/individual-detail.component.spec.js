@@ -9,13 +9,13 @@ describe('individualDetail', function() {
   describe('IndividualDetailController', function() {
     var ctrl;
 
-    // Inject componentController provider
+    // Inject componentController
     beforeEach(inject(function($componentController) {
       ctrl = $componentController('individualDetail');
     }));
 
     if('should do something', function() {
-        expect(ctrl.slug).toBe('undfined');
+      expect(ctrl.slug).toBe('some-slug');
     });
 
   });
