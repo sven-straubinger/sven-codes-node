@@ -8,7 +8,7 @@
   <div class="row">
     <ul class="individuals">
       <li ng-repeat="individual in $ctrl.individuals">
-        <img ng-src="{{individual.imageUrl}}" width="50" />
+        <img ng-src="{{individual.imageUrl}}" ng-click="$ctrl.setImage(individual.imageUrl)" width="50" />
       </li>
     </ul>
   </div>
