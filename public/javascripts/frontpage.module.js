@@ -5,5 +5,6 @@ angular.module('svenCodesNode', [
   // ... which depends on the `individualList` module
   'ngRoute',
   'individualList',
-  'individualDetail'
+  'individualDetail',
+  'core'
 ]);
