@@ -5,15 +5,10 @@ angular.
   module('individualList').
   component('individualList', {
     templateUrl: 'javascripts/individual-list/individual-list.template.html', // Note: The URL is relative to our `frontpage.html` file
-    controller: ['$http',
-      function IndividualListController($http) {
-        var self = this;
+    controller: ['Profile',
+      function IndividualListController(Profile) {
+        this.individuals = Profile.query();
         this.orderProp = 'order';
-
-        $http.get('javascripts/data/individuals.json').then(function(response) {
-          self.individuals = response.data;
-        });
-
       }
     ]
   });
