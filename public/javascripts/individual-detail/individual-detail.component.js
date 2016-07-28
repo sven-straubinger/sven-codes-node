@@ -9,9 +9,13 @@ angular
         var self = this;
         this.slug = $routeParams.slug;
 
+        self.setImage = function(imageUrl) {
+          self.mainImageUrl = imageUrl;
+        }
+
         $http.get('javascripts/data/individuals.json').then(function(response) {
           self.individuals = response.data;
-          self.mainImageUrl = 'http://placehold.it/350x150';
+          self.setImage('http://placehold.it/350x150');
         });
 
       }
