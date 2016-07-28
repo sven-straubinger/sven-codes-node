@@ -7,11 +7,16 @@ describe('individualDetail', function() {
 
   // Test controller
   describe('IndividualDetailController', function() {
-    var ctrl;
+    var $httpBackend, ctrl;
 
     // Inject componentController
-    beforeEach(inject(function($componentController, $routeParams) {
+    beforeEach(inject(function($componentController, $routeParams, _$httpBackend_) {
       $routeParams.slug = "some-slug";
+
+      $httpBackend = _$httpBackend_;
+      $httpBackend.expectGET('javascripts/data/individuals.json')
+                  .respond([{slug: 'Axel'}, {slug: 'Sven'}]);
+
       ctrl = $componentController('individualDetail');
     }));
 
@@ -20,7 +25,7 @@ describe('individualDetail', function() {
     });
 
     it('should set a placeholder to the main image url', function() {
-      expect(ctrl.mainImageUrl).toBe('some-slug');
+      expect(ctrl.mainImageUrl).toBe('http://placehold.it/350x150');
     });
 
   });
