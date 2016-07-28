@@ -10,11 +10,12 @@ describe('individualDetail', function() {
     var ctrl;
 
     // Inject componentController
-    beforeEach(inject(function($componentController) {
+    beforeEach(inject(function($componentController, $routeParams) {
+      $routeParams.slug = "some-slug";
       ctrl = $componentController('individualDetail');
     }));
 
-    if('should do something', function() {
+    it('should set the slug received as url parameter', function() {
       expect(ctrl.slug).toBe('some-slug');
     });
 
