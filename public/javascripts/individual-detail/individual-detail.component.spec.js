@@ -25,6 +25,8 @@ describe('individualDetail', function() {
     });
 
     it('should set a placeholder to the main image url', function() {
+      expect(ctrl.orderProp).toBeUndefined();
+      $httpBackend.flush();
       expect(ctrl.mainImageUrl).toBe('http://placehold.it/350x150');
     });
 
