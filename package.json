@@ -28,6 +28,7 @@
   "homepage": "https://github.com/sven-straubinger/sven-codes-node#readme",
   "dependencies": {
     "angular": "^1.5.8",
+    "angular-resource": "^1.5.8",
     "angular-route": "^1.5.8",
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
