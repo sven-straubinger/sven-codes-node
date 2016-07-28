@@ -26,6 +26,7 @@
             <img ng-src="{{individual.imageUrl}}" alt="{{individual.slug}}" width="50" />
           </a>
           <a href="#/phones/{{phone.id}}">{{individual.slug}} ({{individual.order}})</a>
+          {{individual.public | checkmark}}
         </li>
       </ul>
 
