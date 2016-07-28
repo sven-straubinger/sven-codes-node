@@ -5,4 +5,11 @@
   <div class="row">
     <img ng-src="{{$ctrl.mainImageUrl}}" />
   </div>
+  <div class="row">
+    <ul class="individuals">
+      <li ng-repeat="individual in $ctrl.individuals">
+        <img ng-src="{{individual.imageUrl}}" width="50" />
+      </li>
+    </ul>
+  </div>
 </div>
