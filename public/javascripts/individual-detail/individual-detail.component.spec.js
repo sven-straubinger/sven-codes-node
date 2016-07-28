@@ -14,7 +14,7 @@ describe('individualDetail', function() {
       $routeParams.slug = "some-slug";
 
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('javascripts/data/individuals.json')
+      $httpBackend.expectGET('/javascripts/data/individuals.json')
                   .respond([{slug: 'Axel'}, {slug: 'Sven'}]);
 
       ctrl = $componentController('individualDetail');
@@ -25,7 +25,8 @@ describe('individualDetail', function() {
     });
 
     it('should set a placeholder to the main image url', function() {
-      expect(ctrl.orderProp).toBeUndefined();
+      expect(ctrl.mainImageUrl).toBeUndefined();
+
       $httpBackend.flush();
       expect(ctrl.mainImageUrl).toBe('http://placehold.it/350x150');
     });

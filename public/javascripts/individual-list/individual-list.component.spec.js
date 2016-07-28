@@ -16,14 +16,15 @@ describe('individualList', function() {
     // as the service while avoiding a name conflict.
     beforeEach(inject(function($componentController, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('javascripts/data/individuals.json')
+      $httpBackend.expectGET('/javascripts/data/individuals.json')
                   .respond([{slug: 'Axel'}, {slug: 'Sven'}]);
 
       ctrl = $componentController('individualList');
     }));
 
     it('should create a `individuals` property with 2 individuals fetched with `$http`', function() {
-      expect(ctrl.individuals).toBeUndefined();
+      jasmine.addCustomEqualityTester(angular.equals);
+      expect(ctrl.individuals).toEqual([]);
 
       $httpBackend.flush();
       expect(ctrl.individuals).toEqual([{slug: 'Axel'}, {slug: 'Sven'}]);
