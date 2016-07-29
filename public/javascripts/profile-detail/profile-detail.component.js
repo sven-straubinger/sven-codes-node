@@ -3,7 +3,7 @@
 angular
   .module('individualDetail')
   .component('individualDetail', {
-    templateUrl: 'javascripts/profile-detail/profile-detail.template.html',
+    templateUrl: '/javascripts/profile-detail/profile-detail.template.html',
     controller: [ 'Profile','$routeParams',
       function IndividualDetailController(Profile, $routeParams){
         var self = this;
