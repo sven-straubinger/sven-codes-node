@@ -21,7 +21,6 @@ Angular Unit tests are achieved by `Karma`.
 * Caching
 * Put Angular file to end of body, use `ng-cloak` or `ng-bind` to avoid blinking content
 * Add bootstrap / add HTML5 boilerplate
-* Rename `individual` to `profile`
 * Bundle JavaScript files
 * Fix naming and folder structure for Angular related files, review express/angular generator
 * Setup E2E tests with protractor

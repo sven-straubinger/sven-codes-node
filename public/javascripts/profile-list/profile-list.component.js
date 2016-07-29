@@ -2,12 +2,12 @@
 
 // Register component
 angular.
-  module('individualList').
-  component('individualList', {
+  module('profileList').
+  component('profileList', {
     templateUrl: '/javascripts/profile-list/profile-list.template.html',
     controller: ['Profile',
-      function IndividualListController(Profile) {
-        this.individuals = Profile.query();
+      function ProfileListController(Profile) {
+        this.profiles = Profile.query();
         this.orderProp = 'order';
       }
     ]

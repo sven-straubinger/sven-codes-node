@@ -6,9 +6,9 @@
     <img ng-src="{{$ctrl.mainImageUrl}}" />
   </div>
   <div class="row">
-    <ul class="individuals">
-      <li ng-repeat="individual in $ctrl.individuals">
-        <img ng-src="{{individual.imageUrl}}" ng-click="$ctrl.setImage(individual.imageUrl)" width="50" />
+    <ul>
+      <li ng-repeat="profile in $ctrl.profiles">
+        <img ng-src="{{profile.imageUrl}}" ng-click="$ctrl.setImage(profile.imageUrl)" width="50" />
       </li>
     </ul>
   </div>

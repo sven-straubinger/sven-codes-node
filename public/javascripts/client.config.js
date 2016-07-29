@@ -6,10 +6,10 @@ angular
 
       $routeProvider.
         when('/', {
-          template: '<individual-list></individual-list>'
+          template: '<profile-list></profile-list>'
         }).
         when('/profiles/:slug', {
-          template: '<individual-detail></individual-detail>'
+          template: '<profile-detail></profile-detail>'
         }).
         otherwise('/');
     }

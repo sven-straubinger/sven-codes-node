@@ -1,4 +1,4 @@
 'use strict';
 
-// Define the `individualList` module
-angular.module('individualList', ['core.profile']);
+// Define the `profileList` module
+angular.module('profileList', ['core.profile']);

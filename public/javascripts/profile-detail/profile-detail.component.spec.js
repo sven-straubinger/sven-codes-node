@@ -1,12 +1,12 @@
 'use strict';
 
-describe('individualDetail', function() {
+describe('profileDetail', function() {
 
   // Load module
-  beforeEach(module('individualDetail'));
+  beforeEach(module('profileDetail'));
 
   // Test controller
-  describe('IndividualDetailController', function() {
+  describe('ProfileDetailController', function() {
     var $httpBackend, ctrl;
 
     // Inject componentController
@@ -17,7 +17,7 @@ describe('individualDetail', function() {
       $httpBackend.expectGET('/api/profiles')
                   .respond([{slug: 'Axel'}, {slug: 'Sven'}]);
 
-      ctrl = $componentController('individualDetail');
+      ctrl = $componentController('profileDetail');
     }));
 
     it('should set the slug received as url parameter', function() {

@@ -1,12 +1,12 @@
 'use strict';
 
-describe('individualList', function() {
+describe('profileList', function() {
 
-  // Load the module that contains the `individualList` component before each test
-  beforeEach(module('individualList'));
+  // Load the module that contains the `profileList` component before each test
+  beforeEach(module('profileList'));
 
   // Test the controller
-  describe('IndividualListController', function() {
+  describe('ProfileListController', function() {
 
     // We configure "fake" responses to server requests by calling methods on a mock service called $httpBackend
     var $httpBackend, ctrl;
@@ -19,15 +19,15 @@ describe('individualList', function() {
       $httpBackend.expectGET('/api/profiles')
                   .respond([{slug: 'Axel'}, {slug: 'Sven'}]);
 
-      ctrl = $componentController('individualList');
+      ctrl = $componentController('profileList');
     }));
 
-    it('should create a `individuals` property with 2 individuals fetched with `$http`', function() {
+    it('should create a `profiles` property with 2 profiles fetched with `$http`', function() {
       jasmine.addCustomEqualityTester(angular.equals);
-      expect(ctrl.individuals).toEqual([]);
+      expect(ctrl.profiles).toEqual([]);
 
       $httpBackend.flush();
-      expect(ctrl.individuals).toEqual([{slug: 'Axel'}, {slug: 'Sven'}]);
+      expect(ctrl.profiles).toEqual([{slug: 'Axel'}, {slug: 'Sven'}]);
     });
 
     it('should set a default value for the `orderProp` property', function() {

@@ -2,9 +2,9 @@
 
 // Define the `svenCodesNode` module ...
 angular.module('svenCodesNode', [
-  // ... which depends on the `individualList` module
+  // ... which depends on following modules:
   'ngRoute',
-  'individualList',
-  'individualDetail',
+  'profileList',
+  'profileDetail',
   'core'
 ]);
