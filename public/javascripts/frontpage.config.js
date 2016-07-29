@@ -5,13 +5,13 @@ angular
       $locationProvider.hashPrefix('!');
 
       $routeProvider.
-        when('/individuals', {
+        when('/profiles', {
           template: '<individual-list></individual-list>'
         }).
-        when('/individuals/:slug', {
+        when('/profiles/:slug', {
           template: '<individual-detail></individual-detail>'
         }).
-        otherwise('/individuals');
+        otherwise('/profiles');
     }
 
   ]);
