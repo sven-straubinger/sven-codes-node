@@ -32,6 +32,6 @@ app.use(favicon(path.join(__dirname, 'public/images', 'favicon.png')));
 
 // Route
 app.use('/', routeFrontpage);
-app.use('/api/individuals/*', routeApi);
+app.use('/api/profiles', routeApi);
 
 module.exports = app;
