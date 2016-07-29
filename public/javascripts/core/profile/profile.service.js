@@ -4,10 +4,10 @@ angular.
   module('core.profile').
   factory('Profile', ['$resource',
     function($resource) {
-      return $resource('/javascripts/data/:profileId.json', {}, {
+      return $resource('/api/:profileId', {}, {
         query: {
           method: 'GET',
-          params: {profileId: 'individuals'},
+          params: {profileId: 'profiles'},
           isArray: true
         }
       });
