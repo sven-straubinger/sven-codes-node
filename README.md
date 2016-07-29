@@ -26,3 +26,5 @@ Angular Unit tests are achieved by `Karma`.
 * Fix naming and folder structure for Angular related files, review express/angular generator
 * Setup E2E tests with protractor
 * check against via yeoman: generator-angular
+* remove trailing slash --> 301 redirect
+* integrate JavaScript at botto, CSS in header
