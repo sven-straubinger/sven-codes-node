@@ -7,7 +7,7 @@ var router = express.Router();
 
 // GET requests
 router.get('/', function(req, res, next) {
-    fs.readFile(path.resolve("individuals.json"), "utf8", function(err, data) {
+    fs.readFile(path.resolve("data/profiles.json"), "utf8", function(err, data) {
         res.header("Content-Type", "application/json");
         res.end(data);
     });
