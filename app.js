@@ -13,9 +13,6 @@ var routeApi = require('./routes/api');
 // Init app
 var app = express();
 
-// Setup view engine
-app.set('views', path.join(__dirname, 'views'));
-
 // Defaults
 app.use(logger('dev'));
 app.use(bodyParser.json());
