@@ -6,7 +6,6 @@ var router = express.Router();
 
 // GET requests
 router.get('/', function(req, res, next) {
-    // res.render('frontpage', { title: 'Sven codes' });
     res.sendFile(path.resolve("views/frontpage.html"));
 });
 
