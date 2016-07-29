@@ -21,7 +21,7 @@ describe('Profile', function() {
   // Instantiate the service and "train" `$httpBackend` before each test
   beforeEach(inject(function(_Profile_, _$httpBackend_) {
     $httpBackend = _$httpBackend_;
-    $httpBackend.expectGET('/javascripts/data/individuals.json').respond(profilesData);
+    $httpBackend.expectGET('/api/profiles').respond(profilesData);
 
     Profile = _Profile_;
   }));

@@ -16,7 +16,7 @@ describe('individualList', function() {
     // as the service while avoiding a name conflict.
     beforeEach(inject(function($componentController, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('/javascripts/data/individuals.json')
+      $httpBackend.expectGET('/api/profiles')
                   .respond([{slug: 'Axel'}, {slug: 'Sven'}]);
 
       ctrl = $componentController('individualList');

@@ -14,7 +14,7 @@ describe('individualDetail', function() {
       $routeParams.slug = "some-slug";
 
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('/javascripts/data/individuals.json')
+      $httpBackend.expectGET('/api/profiles')
                   .respond([{slug: 'Axel'}, {slug: 'Sven'}]);
 
       ctrl = $componentController('individualDetail');
