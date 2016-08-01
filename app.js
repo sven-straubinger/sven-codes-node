@@ -13,6 +13,10 @@ var routeApi = require('./routes/api');
 // Init app
 var app = express();
 
+// Basic auth
+var auth = require('./routes/auth');
+app.use(auth);
+
 // Defaults
 app.use(logger('dev'));
 app.use(bodyParser.json());
