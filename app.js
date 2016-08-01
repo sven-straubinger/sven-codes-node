@@ -26,7 +26,7 @@ app.use(cookieParser()); // Set cookie parser
 // Set favicon
 app.use(favicon(path.join(__dirname, 'public/images', 'favicon.png')));
 
-// Route
+// Routes
 app.use('/', routeFrontpage);
 app.use('/api/profiles', routeApi);
 
