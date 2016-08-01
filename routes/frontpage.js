@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 
 // GET request - robots.txt
 router.get('/robots.txt', function(req, res, next) {
-    fs.readFile(path.resolve("data/robots.txt"), "utf8", function(err, data) {
+    fs.readFile(path.resolve("views/robots.txt"), "utf8", function(err, data) {
         res.header("Content-Type", "text/plain");
         res.end(data);
     });
@@ -20,7 +20,7 @@ router.get('/robots.txt', function(req, res, next) {
 
 // GET request - humans.txt
 router.get('/humans.txt', function(req, res, next) {
-    fs.readFile(path.resolve("data/humans.txt"), "utf8", function(err, data) {
+    fs.readFile(path.resolve("views/humans.txt"), "utf8", function(err, data) {
         res.header("Content-Type", "text/plain");
         res.end(data);
     });
