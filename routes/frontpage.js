@@ -18,4 +18,12 @@ router.get('/robots.txt', function(req, res, next) {
     });
 });
 
+// GET request - humans.txt
+router.get('/humans.txt', function(req, res, next) {
+    fs.readFile(path.resolve("data/humans.txt"), "utf8", function(err, data) {
+        res.header("Content-Type", "text/plain");
+        res.end(data);
+    });
+});
+
 module.exports = router;
