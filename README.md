@@ -18,12 +18,10 @@ Angular Unit tests are achieved by `Karma`.
 ## TODOs
 
 * 404 and 500 status code handling
-* Caching
-* Put Angular file to end of body, use `ng-cloak` or `ng-bind` to avoid blinking content
-* Add bootstrap / add HTML5 boilerplate
-* Bundle JavaScript files
-* Fix naming and folder structure for Angular related files, review express/angular generator
-* Setup E2E tests with protractor
-* check against via yeoman: generator-angular
+* add caching
+* use `ng-cloak` or `ng-bind` to avoid blinking content
+* bundle JavaScript and CSS files
+* fix naming and folder structure for Angular related files
+* setup E2E tests with protractor
 * remove trailing slash --> 301 redirect
-* integrate JavaScript at botto, CSS in header
+* review Glyphicons integration

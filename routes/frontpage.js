@@ -5,12 +5,12 @@ var express = require('express');
 // Init router
 var router = express.Router();
 
-// GET request - frontpage
+// GET - frontpage
 router.get('/', function(req, res, next) {
     res.sendFile(path.resolve("views/frontpage.html"));
 });
 
-// GET request - robots.txt
+// GET - robots.txt
 router.get('/robots.txt', function(req, res, next) {
     fs.readFile(path.resolve("views/robots.txt"), "utf8", function(err, data) {
         res.header("Content-Type", "text/plain");
@@ -18,10 +18,18 @@ router.get('/robots.txt', function(req, res, next) {
     });
 });
 
-// GET request - humans.txt
+// GET - humans.txt
 router.get('/humans.txt', function(req, res, next) {
     fs.readFile(path.resolve("views/humans.txt"), "utf8", function(err, data) {
         res.header("Content-Type", "text/plain");
+        res.end(data);
+    });
+});
+
+// GET - browserconfig.xml
+router.get('/browserconfig.xml', function(req, res, next) {
+    fs.readFile(path.resolve("views/browserconfig.xml"), "utf8", function(err, data) {
+        res.header("Content-Type", "text/xml");
         res.end(data);
     });
 });
