@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
 // GET - robots.txt
 router.get('/robots.txt', function(req, res, next) {
     fs.readFile(path.resolve("views/robots.txt"), "utf8", function(err, data) {
-        res.header("Content-Type", "text/plain");
         res.end(data);
     });
 });
@@ -21,7 +20,6 @@ router.get('/robots.txt', function(req, res, next) {
 // GET - humans.txt
 router.get('/humans.txt', function(req, res, next) {
     fs.readFile(path.resolve("views/humans.txt"), "utf8", function(err, data) {
-        res.header("Content-Type", "text/plain");
         res.end(data);
     });
 });
@@ -29,7 +27,6 @@ router.get('/humans.txt', function(req, res, next) {
 // GET - browserconfig.xml
 router.get('/browserconfig.xml', function(req, res, next) {
     fs.readFile(path.resolve("views/browserconfig.xml"), "utf8", function(err, data) {
-        res.header("Content-Type", "text/xml");
         res.end(data);
     });
 });
