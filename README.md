@@ -9,6 +9,8 @@ Source code of the [sven.codes](http://sven.codes) website written in Node.js an
 4. Run `npm run-script debug` while developing
 5. Run `npm start` for production
 
+`Note: Please start the node process within the root folder of this project to avoid path conflicts.`
+
 ## Testing
 
 Angular Unit tests are achieved by `Karma`.
