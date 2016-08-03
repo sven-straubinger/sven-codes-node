@@ -2,6 +2,8 @@
 
 body {
     padding-top: 50px;
+    color: white;
+    background-color: black;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
