@@ -23,6 +23,7 @@ hr {
 }
 
 footer {
+    position: relative;
     text-align: center;
     font-size: 0.85em;
     padding-bottom: 8px;
@@ -30,4 +31,8 @@ footer {
 
 footer p {
     margin: 0 0 4px;
+}
+
+.no-margin-top {
+    margin-top: 0 !important;
 }
