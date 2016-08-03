@@ -16,58 +16,70 @@
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">sven.codes</a>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">sven.codes</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Magazin</a></li>
+              <li class="lang"><a href="#">en</a></li>
+              <li class="lang active"><a href="#">de</a></li>
+            </ul>
+          </div><!--/.navbar-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Magazin</a></li>
-            <li class="lang"><a href="#">en</a></li>
-            <li class="lang active"><a href="#">de</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world! <span ng-bind="name"></span></h1>
-        <p>Berlin based Mobile- and Webdeveloper.</p>
-        <p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a>
-          <input ng-model="name">
-        </p>
-      </div>
-    </div>
+    <main>
 
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12">
-          <div ng-view ng-cloak></div>
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello, world! <span ng-bind="name"></span></h1>
+          <p>Berlin based Mobile- and Webdeveloper.</p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a>
+            <input ng-model="name">
+          </p>
         </div>
       </div>
 
-      <hr>
+      <div class="container">
 
-      <footer>
-        <p>Made with <a href="https://nodejs.org/en/" target="_blank">Node.js</a>, <a href="https://angularjs.org" target="_blank">AngularJS</a> and <a href="http://sven.codes" target="_blank">&#10084</a>.</p>
-        <p>Source code available: <a href="https://github.com/sven-straubinger/sven-codes-node" target="_blank">https://github.com/sven-straubinger/sven-codes-node</a></p>
-        <p>&copy; Sven Straubinger 2016</p>
-      </footer>
+        <div class="row">
+          <div class="col-md-12">
+            <div ng-view ng-cloak></div>
+          </div>
+        </div>
 
-    </div>
+        <hr>
+
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+
+          <p>Made with <a href="https://nodejs.org/en/" target="_blank">Node.js</a>, <a href="https://angularjs.org" target="_blank">AngularJS</a> and <a href="http://sven.codes" target="_blank">&#10084</a>.</p>
+          <p>Source code available: <a href="https://github.com/sven-straubinger/sven-codes-node" target="_blank">https://github.com/sven-straubinger/sven-codes-node</a></p>
+          <p>&copy; Sven Straubinger 2016</p>
+
+        </div>
+      </div>
+    </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="/javascripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
