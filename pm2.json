@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "sven-codes-node",
+      "script": "./bin/www",
+      "args": [],
+      "watch": true,
+      "node_args": "",
+      "merge_logs": true,
+      "cwd": ".",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
