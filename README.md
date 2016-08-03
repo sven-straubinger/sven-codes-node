@@ -30,7 +30,6 @@ Angular Unit tests are achieved by `Karma`.
 
 * 404 and 500 status code handling
 * add caching
-* use `ng-cloak` or `ng-bind` to avoid blinking content
 * bundle JavaScript and CSS files
 * fix naming and folder structure for Angular related files
 * setup E2E tests with protractor
