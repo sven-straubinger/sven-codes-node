@@ -60,3 +60,7 @@ footer p {
     background-color: inherit;
     font-weight: bold;
 }
+
+.navbar-right li:last-child {
+    padding-right: 15px;
+}
