@@ -11,6 +11,15 @@ Source code of the [sven.codes](http://sven.codes) website written in Node.js an
 
 `Note: Please start the node process within the root folder of this project to avoid path conflicts.`
 
+## Production environment (with PM2)
+
+To run the application within a PM2 environment, do the following:
+
+1. Install [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com)
+2. Checkout project
+3. Install PM2: `npm install pm2 -g`
+4. Run `pm2 start pm2.json`
+
 ## Testing
 
 Angular Unit tests are achieved by `Karma`.
