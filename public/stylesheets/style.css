@@ -6,11 +6,8 @@ body {
     background-color: black;
 }
 
-header,
-.navbar,
-.navbar-inverse {
-    background-color: inherit;
-}
+header, .navbar, .navbar-inverse { background-color: inherit; }
+.navbar-inverse .navbar-nav>li>a { color: inherit; }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
