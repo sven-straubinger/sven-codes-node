@@ -12,6 +12,11 @@ a:hover {
 
 .icon-wrapper {
     border: 1px solid white;
+    padding: 10px;
+}
+
+.icon-wrapper img {
+    width: 100%;
 }
 
 header,
