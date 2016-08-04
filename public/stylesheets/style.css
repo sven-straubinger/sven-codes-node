@@ -10,6 +10,7 @@ a:hover {
     color: #00a091;
 }
 
+/* Icons */
 .icon {
     border: 1px solid white;
     padding: 10px;
@@ -17,15 +18,44 @@ a:hover {
 
 .icon:hover {
     border: 0px solid white;
-    padding: 12px;
+    padding: 13px;
 }
 
 .icon img {
     width: 100%;
 }
 
+.icon-github:hover {
+    /* border: 1px solid white; */
+    background-color: rgb(204, 204, 204);
+}
+
 .icon-googleplus:hover {
     background-color: rgb(220, 78, 65);
+}
+
+.icon-instagram:hover {
+    background-color: rgb(228, 64, 95);
+}
+
+.icon-linkedin:hover {
+    background-color: rgb(0, 119, 181);
+}
+
+.icon-snapchat:hover {
+    background-color: rgb(255, 252, 0);
+}
+
+.icon-stackoverflow:hover {
+    background-color: rgb(254, 122, 22);
+}
+
+.icon-twitter:hover {
+    background-color: rgb(85, 172, 238);
+}
+
+.icon-xing:hover {
+    background-color: rgb(0, 90, 95);
 }
 
 header,
