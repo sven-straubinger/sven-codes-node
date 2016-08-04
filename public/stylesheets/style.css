@@ -5,6 +5,11 @@ body {
     background-color: black;
 }
 
+a,
+a:hover {
+    color: #00a091;
+}
+
 header,
 .navbar,
 .navbar-inverse {
