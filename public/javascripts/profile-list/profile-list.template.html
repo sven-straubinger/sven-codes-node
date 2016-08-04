@@ -1,27 +1,11 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">
-      <!--Sidebar content-->
-
-      <p>
-        Search:
-        <input ng-model="$ctrl.query">
-      </p>
-
-    </div>
-    <div class="col-md-10">
-      <!--Body content-->
-
-      <ul>
-        <li ng-repeat="profile in $ctrl.profiles | filter:$ctrl.query">
-          <a href="#/phones/{{phone.id}}" class="thumb">
-            <img ng-src="{{profile.imageUrl}}" alt="{{profile.slug}}" width="50" />
-          </a>
-          <a href="#/phones/{{phone.id}}">{{profile.slug}}</a>
-          {{profile.public | checkmark}}
-        </li>
-      </ul>
-
+<div class="container">
+  <div class="row" style="padding-top:26vh;padding-bottom:24vh;">
+    <div ng-repeat="account in $ctrl.profile.accounts" class="col-md-1 col-sm-2 col-xs-4">
+      <div class="icon icon-{{account.slug}}">
+        <a href="{{account.url}}" target="_blank">
+          <img src="/images/icons/svg/{{account.slug}}.svg" alt="{{account.name}} Logo">
+        </a>
+      </div>
     </div>
   </div>
 </div>

@@ -7,7 +7,7 @@ angular.
     templateUrl: '/javascripts/profile-list/profile-list.template.html',
     controller: ['Profile',
       function ProfileListController(Profile) {
-        this.profiles = Profile.query();
+        this.profile = Profile.get({slug: 'sven'});
       }
     ]
   });
