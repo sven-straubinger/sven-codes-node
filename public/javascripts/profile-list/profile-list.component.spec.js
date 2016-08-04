@@ -30,10 +30,6 @@ describe('profileList', function() {
       expect(ctrl.profiles).toEqual([{slug: 'Axel'}, {slug: 'Sven'}]);
     });
 
-    it('should set a default value for the `orderProp` property', function() {
-      expect(ctrl.orderProp).toBe('order');
-    });
-
   });
 
 });
