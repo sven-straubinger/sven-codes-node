@@ -13,12 +13,12 @@ a:hover {
 /* Icons */
 .icon {
     border: 1px solid white;
-    padding: 10px;
+    padding: 13px;
 }
 
 .icon:hover {
     border: 0px solid white;
-    padding: 13px;
+    padding: 16px;
 }
 
 .icon img {
