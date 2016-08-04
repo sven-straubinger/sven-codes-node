@@ -3,7 +3,7 @@
     <div ng-repeat="account in $ctrl.profile.accounts" class="col-md-1 col-sm-2 col-xs-4">
       <div class="icon icon-{{account.slug}}">
         <a href="{{account.url}}" target="_blank">
-          <img src="/images/icons/svg/{{account.slug}}.svg" alt="{{account.name}} Logo">
+          <img ng-src="/images/icons/svg/{{account.slug}}.svg" alt="{{account.name}} Logo">
         </a>
       </div>
     </div>
