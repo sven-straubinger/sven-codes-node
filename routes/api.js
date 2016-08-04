@@ -6,9 +6,11 @@ var underscore = require('underscore');
 // Init router
 var router = express.Router();
 
+var filePath = "data/profiles.json";
+
 // GET request - all profiles /api/profiles
 router.get('/', function(req, res, next) {
-    fs.readFile(path.resolve("data/profiles.json"), "utf8", function(err, data) {
+    fs.readFile(path.resolve(filePath), "utf8", function(err, data) {
         res.header("Content-Type", "application/json");
         res.end(data);
     });
@@ -17,7 +19,7 @@ router.get('/', function(req, res, next) {
 // GET request - profile for /api/profiles/:slug
 router.get('/:slug', function(req, res, next) {
     var slug = req.params.slug;
-    fs.readFile(path.resolve("data/profiles.json"), "utf8", function(err, data) {
+    fs.readFile(path.resolve(filePath), "utf8", function(err, data) {
         arr = JSON.parse(data);
 
         // Find profile for slug
@@ -26,7 +28,7 @@ router.get('/:slug', function(req, res, next) {
         })
 
         // Return empty object, when no match was found
-        obj = (typeof(obj) === "undefined") ? {} : obj;
+        obj = obj || {};
 
         // Send object
         res.header("Content-Type", "application/json");
