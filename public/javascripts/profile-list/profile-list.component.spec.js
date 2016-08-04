@@ -17,7 +17,7 @@ describe('profileList', function() {
     beforeEach(inject(function($componentController, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('/api/profiles')
-                  .respond([{slug: 'Axel'}, {slug: 'Sven'}]);
+                  .respond([{slug: 'axel'}, {slug: 'sven'}]);
 
       ctrl = $componentController('profileList');
     }));
@@ -27,7 +27,7 @@ describe('profileList', function() {
       expect(ctrl.profiles).toEqual([]);
 
       $httpBackend.flush();
-      expect(ctrl.profiles).toEqual([{slug: 'Axel'}, {slug: 'Sven'}]);
+      expect(ctrl.profiles).toEqual([{slug: 'axel'}, {slug: 'sven'}]);
     });
 
   });
