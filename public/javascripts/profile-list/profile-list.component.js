@@ -8,7 +8,6 @@ angular.
     controller: ['Profile',
       function ProfileListController(Profile) {
         this.profiles = Profile.query();
-        this.orderProp = 'order';
       }
     ]
   });

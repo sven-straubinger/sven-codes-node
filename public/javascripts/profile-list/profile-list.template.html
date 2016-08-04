@@ -8,24 +8,16 @@
         <input ng-model="$ctrl.query">
       </p>
 
-      <p>
-        Sort by:
-        <select ng-model="$ctrl.orderProp">
-          <option value="slug">Alphabetical</option>
-          <option value="order">Order Number</option>
-        </select>
-      </p>
-
     </div>
     <div class="col-md-10">
       <!--Body content-->
 
       <ul>
-        <li ng-repeat="profile in $ctrl.profiles | filter:$ctrl.query | orderBy:$ctrl.orderProp">
+        <li ng-repeat="profile in $ctrl.profiles | filter:$ctrl.query">
           <a href="#/phones/{{phone.id}}" class="thumb">
             <img ng-src="{{profile.imageUrl}}" alt="{{profile.slug}}" width="50" />
           </a>
-          <a href="#/phones/{{phone.id}}">{{profile.slug}} ({{profile.order}})</a>
+          <a href="#/phones/{{phone.id}}">{{profile.slug}}</a>
           {{profile.public | checkmark}}
         </li>
       </ul>

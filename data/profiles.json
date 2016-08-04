@@ -1,12 +1,10 @@
 [
   {
     "slug": "sven",
-    "order": 1,
     "imageUrl": "https://avatars1.githubusercontent.com/u/1197899?v=3&s=460",
     "public": true
   }, {
     "slug": "axel",
-    "order": 2,
     "imageUrl": "http://www.markatus.de/wp-content/uploads/2016/04/pt_astraubinger-235x235.png",
     "public": false
   }
