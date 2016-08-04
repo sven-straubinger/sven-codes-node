@@ -35,3 +35,4 @@ Angular Unit tests are achieved by `Karma`.
 * setup E2E tests with protractor
 * remove trailing slash --> 301 redirect
 * review Glyphicons integration
+* add credits in imprint to https://simpleicons.org
