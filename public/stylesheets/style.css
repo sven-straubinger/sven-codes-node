@@ -10,13 +10,22 @@ a:hover {
     color: #00a091;
 }
 
-.icon-wrapper {
+.icon {
     border: 1px solid white;
     padding: 10px;
 }
 
-.icon-wrapper img {
+.icon:hover {
+    border: 0px solid white;
+    padding: 12px;
+}
+
+.icon img {
     width: 100%;
+}
+
+.icon-googleplus:hover {
+    background-color: rgb(220, 78, 65);
 }
 
 header,
