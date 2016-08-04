@@ -1,11 +1,40 @@
-[
-  {
+[{
     "slug": "sven",
-    "imageUrl": "https://avatars1.githubusercontent.com/u/1197899?v=3&s=460",
-    "public": true
-  }, {
+    "public": true,
+    "accounts": [{
+        "slug": "github",
+        "name": "GitHub",
+        "url": "https://github.com/sven-straubinger"
+    }, {
+        "slug": "googleplus",
+        "name": "Google+",
+        "url": "https://plus.google.com/104891584287811056845"
+    }, {
+        "slug": "instagram",
+        "name": "Instagram",
+        "url": "https://www.instagram.com/svenson.s/"
+    }, {
+        "slug": "linkedin",
+        "name": "LinkedIn",
+        "url": "https://de.linkedin.com/in/sven-straubinger-01981378"
+    }, {
+        "slug": "snapchat",
+        "name": "Snapchat",
+        "url": "https://www.snapchat.com"
+    }, {
+        "slug": "stackoverflow",
+        "name": "Stack Overflow",
+        "url": "http://stackoverflow.com/users/2561539/svenson"
+    }, {
+        "slug": "twitter",
+        "name": "Twitter",
+        "url": "https://twitter.com/svenstraubinger"
+    }, {
+        "slug": "xing",
+        "name": "XING",
+        "url": "https://www.xing.com/profile/Sven_Straubinger"
+    }]
+}, {
     "slug": "axel",
-    "imageUrl": "http://www.markatus.de/wp-content/uploads/2016/04/pt_astraubinger-235x235.png",
     "public": false
-  }
-]
+}]
