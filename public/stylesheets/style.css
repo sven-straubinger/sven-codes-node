@@ -122,3 +122,7 @@ footer p {
 .navbar-right li:last-child {
     padding-right: 15px;
 }
+
+/* Vertically center */
+.vertical-centered-container { text-align: center; }
+.vertical-centered-item { float: none; display: inline-block; }
