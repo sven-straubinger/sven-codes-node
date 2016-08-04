@@ -16,18 +16,18 @@ describe('profileList', function() {
     // as the service while avoiding a name conflict.
     beforeEach(inject(function($componentController, _$httpBackend_) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('/api/profiles')
-                  .respond([{slug: 'axel'}, {slug: 'sven'}]);
+      $httpBackend.expectGET('/api/profiles/sven')
+                  .respond({slug: 'sven'});
 
       ctrl = $componentController('profileList');
     }));
 
-    it('should create a `profiles` property with 2 profiles fetched with `$http`', function() {
+    it('should create a `profile` property with one profile fetched with `$http`', function() {
       jasmine.addCustomEqualityTester(angular.equals);
-      expect(ctrl.profiles).toEqual([]);
+      expect(ctrl.profile).toEqual({});
 
       $httpBackend.flush();
-      expect(ctrl.profiles).toEqual([{slug: 'axel'}, {slug: 'sven'}]);
+      expect(ctrl.profile).toEqual({slug: 'sven'});
     });
 
   });
