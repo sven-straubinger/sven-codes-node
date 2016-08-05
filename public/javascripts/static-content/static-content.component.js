@@ -5,6 +5,6 @@ angular.
   component('staticContent', {
     templateUrl: '/javascripts/static-content/static-content.template.html',
     controller: function StaticContentController() {
-        this.content = "Hey there";
+        this.slug = 'imprint';
     }
   });
