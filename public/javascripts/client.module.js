@@ -6,5 +6,6 @@ angular.module('svenCodesNode', [
   'ngRoute',
   'profileList',
   'profileDetail',
+  'staticContent',
   'core'
 ]);

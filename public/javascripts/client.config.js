@@ -11,6 +11,9 @@ angular
         when('/profiles/:slug', {
           template: '<profile-detail></profile-detail>'
         }).
+        when('/imprint', {
+          template: '<static-content></static-content>'
+        }).
         otherwise('/');
     }
 
