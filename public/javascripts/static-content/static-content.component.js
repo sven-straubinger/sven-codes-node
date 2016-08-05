@@ -4,7 +4,7 @@ angular.
   module('staticContent').
   component('staticContent', {
     templateUrl: '/javascripts/static-content/static-content.template.html',
-    controller: function ProfileListController() {
+    controller: function StaticContentController() {
         this.content = "Hey there";
     }
   });
