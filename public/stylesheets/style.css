@@ -90,21 +90,17 @@ footer {
     padding-bottom: 8px;
 }
 
-footer #scroll-indicator {
-    cursor: pointer;
-    width: 100%;
-    left: 0;
-    top: -32px;
-    text-align: center;
-    position: absolute;
-}
-
 footer p {
     margin: 0 0 4px;
 }
 
-.no-margin-top {
-    margin-top: 0 !important;
+#scroll-indicator {
+    cursor: pointer;
+    width: 100%;
+    left: 0;
+    bottom: 16px;
+    text-align: center;
+    position: fixed;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -126,3 +122,6 @@ footer p {
 /* Vertically center */
 .vertical-centered-container { text-align: center; }
 .vertical-centered-item { float: none; display: inline-block; }
+
+/* Mixins */
+.no-margin-top { margin-top: 0 !important; }
