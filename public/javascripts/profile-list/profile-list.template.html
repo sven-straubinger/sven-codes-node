@@ -6,11 +6,11 @@
   </div>
 </div>
 
-<div class="page bg-turquoise">
+<div class="page">
   <div class="container">
     <div class="row vertical-centered-container" style="padding-top:26vh;padding-bottom:24vh;">
       <div ng-repeat="account in $ctrl.profile.accounts" class="col-md-1 col-sm-2 col-xs-4 vertical-centered-item">
-        <div class="icon icon-{{account.slug}}">
+        <div class="icon icon-{{account.slug}}" ng-mouseenter="$ctrl.ambient(true)" ng-mouseout="$ctrl.ambient(false)" >
           <a href="{{account.url}}" target="_blank">
             <img ng-src="/images/icons/svg/{{account.slug}}.svg" alt="{{account.name}} Logo">
           </a>

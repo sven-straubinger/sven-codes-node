@@ -8,6 +8,12 @@ angular.
     controller: ['Profile',
       function ProfileListController(Profile) {
         this.profile = Profile.get({slug: 'sven'});
+
+        this.ambient = function ambient(active) {
+          var color = active ? 'blue' : 'black';
+          $('body').css('background-color', color);
+        }
+
       }
     ]
   });
