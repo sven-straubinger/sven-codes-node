@@ -38,3 +38,4 @@ Angular Unit tests are achieved by `Karma`.
 * add credits in imprint to https://simpleicons.org
 * integrate imprint
 * change background-color on hovering icons
+* add "paging" with about-page and account-page
