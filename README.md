@@ -36,3 +36,5 @@ Angular Unit tests are achieved by `Karma`.
 * remove trailing slash --> 301 redirect
 * review Glyphicons integration
 * add credits in imprint to https://simpleicons.org
+* integrate imprint
+* change background-color on hovering icons
