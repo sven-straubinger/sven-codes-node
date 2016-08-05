@@ -9,9 +9,12 @@ angular.
       function ProfileListController(Profile) {
         this.profile = Profile.get({slug: 'sven'});
 
-        this.ambient = function ambient(active) {
-          var color = active ? 'blue' : 'black';
-          $('body').css('background-color', color);
+        this.ambient = function ambient(active, slug) {
+          if(active) {
+            $('body').addClass('bg-' + slug);
+          } else {
+            $('body').removeClass('bg-' + slug);
+          }
         }
 
       }
