@@ -112,10 +112,10 @@ header,
 }
 
 .page-scroll-indicator:hover img {
-            transform: scale(0.85);
-         -o-transform: scale(0.85);
-       -moz-transform: scale(0.85);
-    -webkit-transform: scale(0.85);
+            transform: scale(0.88);
+         -o-transform: scale(0.88);
+       -moz-transform: scale(0.88);
+    -webkit-transform: scale(0.88);
 }
 
 .page-headline.page-headline-inverse {
