@@ -127,6 +127,7 @@ header,
     min-height: 100vh;
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
 
 .project.zeitfenster {
@@ -135,11 +136,6 @@ header,
 
 .project.gopopup {
     background-image: url('/images/projects/gopopup.jpg');
-}
-
-hr {
-    border-color: rgb(32,33,34);
-    border-bottom:0;
 }
 
 footer {
