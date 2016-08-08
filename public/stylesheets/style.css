@@ -121,7 +121,7 @@ footer p {
     margin: 0 0 4px;
 }
 
-#scroll-indicator {
+.scroll-indicator {
     cursor: pointer;
     width: 100%;
     left: 0;
