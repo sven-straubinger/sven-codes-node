@@ -44,6 +44,11 @@ header,
     border: none;
 }
 
+.navbar-brand h1 {
+    display: inline;
+    font-size: inherit;
+}
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
@@ -117,10 +122,13 @@ footer p {
     padding-right: 15px;
 }
 
-/* Mixins */
+/* Mixins Colors */
 .no-margin-top { margin-top: 0 !important; }
 .bg-turquoise { background-color: #00a091; }
 .bg-white { background-color: white; }
+
+/* Mixins fonts */
+.font-lighter { font-weight: lighter; }
 
 /* Brand Background Colors */
 .bg-stackoverflow { background-color: rgb(254, 122, 22); }
