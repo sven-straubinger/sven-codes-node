@@ -12,7 +12,6 @@ body {
 
 a,
 a:hover {
-    /* color: #00a091; */
     color: white;
 }
 
@@ -47,6 +46,7 @@ header,
 .navbar-brand h1 {
     display: inline;
     font-size: inherit;
+    color: white;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -116,10 +116,6 @@ footer p {
 .navbar-inverse .navbar-nav>.active>a:focus {
     background-color: inherit;
     font-weight: bold;
-}
-
-.navbar-right li:last-child {
-    padding-right: 15px;
 }
 
 /* Mixins Colors */
