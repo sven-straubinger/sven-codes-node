@@ -123,7 +123,7 @@ header,
 }
 
 /* Projects */
-.frame {
+.project {
     border: 14px solid rgb(32,33,34);
     background-color: transparent;
     color: white;
@@ -132,11 +132,11 @@ header,
     background-position: center center;
 }
 
-.frame.zeitfenster {
+.project.zeitfenster {
     background-image: url('/images/projects/zeitfenster.png');
 }
 
-.frame.gopopup {
+.project.gopopup {
     background-image: url('/images/projects/gopopup.jpg');
 }
 
