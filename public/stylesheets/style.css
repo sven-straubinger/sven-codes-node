@@ -1,7 +1,7 @@
 /* style.css */
 
 body {
-    color: white;
+    color: rgb(131, 139, 145);
     background-color: black;
 
             transition: background-color .3s ease-out;
@@ -12,7 +12,8 @@ body {
 
 a,
 a:hover {
-    color: #00a091;
+    /* color: #00a091; */
+    color: white;
 }
 
 /* Icons */
