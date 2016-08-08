@@ -80,6 +80,16 @@ header,
 
 .page {
     min-height: 100vh;
+    position: relative;
+}
+
+.page-headline {
+    font-size: inherit;
+    text-transform: uppercase;
+    position: absolute;
+    color: white;
+    top: 20px;
+    padding-left: 20px;
 }
 
 .page-content-center {
@@ -97,17 +107,6 @@ header,
     bottom: 16px;
     text-align: center;
     position: absolute;
-}
-
-.page .container {
-    position: relative;
-}
-
-.page-headline {
-    position: absolute;
-    color: white;
-    top: 50px;
-    padding-left: 20px;
 }
 
 .page-headline.page-headline-inverse {
