@@ -84,12 +84,13 @@ header,
 }
 
 .page-headline {
+    color: white;
     font-size: inherit;
     text-transform: uppercase;
     position: absolute;
-    color: white;
     top: 20px;
     padding-left: 20px;
+    margin: 0;
 }
 
 .page-content-center {
