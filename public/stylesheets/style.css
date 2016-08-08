@@ -4,10 +4,10 @@ body {
     color: white;
     background-color: black;
 
-            transition: background-color .2s ease-in;
-         -o-transition: background-color .2s ease-in;
-       -moz-transition: background-color .2s ease-in;
-    -webkit-transition: background-color .2s ease-in;
+            transition: background-color .3s ease-out;
+         -o-transition: background-color .3s ease-out;
+       -moz-transition: background-color .3s ease-out;
+    -webkit-transition: background-color .3s ease-out;
 }
 
 a,
