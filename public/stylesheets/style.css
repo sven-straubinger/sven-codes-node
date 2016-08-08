@@ -49,20 +49,25 @@ header,
     color: white;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-    color: white;
+.navbar-nav>li>a {
+    color: white !important;
     text-transform: uppercase;
     letter-spacing:1px;
     font-weight: lighter;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover {
+.navbar-nav>li>a:hover {
     border-bottom: 2px solid white;
 }
 
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>.active>a:focus {
+.navbar-nav>.active>a,
+.navbar-nav>.active>a:hover,
+.navbar-nav>.active>a:focus {
     background-color: inherit;
     font-weight: bold;
 }
