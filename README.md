@@ -39,3 +39,4 @@ Angular Unit tests are achieved by `Karma`.
 * integrate imprint
 * change background-color on hovering icons
 * add "paging" with about-page and account-page
+* add sitemap.xml

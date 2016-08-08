@@ -17,7 +17,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <nav class="navbar navbar-inverse navbar-absolute" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -26,11 +26,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="#!/">
+              <h1><span class="font-lighter">SVEN</span>CODES</h1>
+            </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#!/#projects">Projects</a></li>
+              <li><a href="#!/#accounts">Contact</a></li>
             </ul>
           </div><!--/.navbar-collapse -->
         </div>
@@ -38,30 +41,12 @@
     </header>
 
     <main>
-
-      <div class="container">
-        <h1>Hello, world! Sven codes Node.js.</h1>
-        <p>Sven Straubinger &mdash; Lead <a href="http://www.gopopup.com/en" target="_blank">@gopopup</a> and <a href="http://www.zeitfenster-app.de" target="_blank">@zeitfenster</a>, contributed to <a href="https://github.com/commercetools" target="_blank">@commercetools</a> and <a href="https://github.com/sphereio" target="_blank">@sphereio</a>.<br>
-        Berlin based Mobile- and Webdeveloper and Freelancer. <a href="mailto:sven.codes@gopopup.com">Contact</a> me.</p>
-      </div>
-
       <div ng-view ng-cloak></div>
-
     </main>
 
     <footer>
-
-      <div id="scroll-indicator">
-        <svg width="34" height="12">
-          <path d="M0 0 L17 12 L34 0 L30 0 L17 8 L4 0 Z" fill="white" />
-          &#8681;
-        </svg>
-      </div>
-
       <div class="container">
         <div class="row">
-
-          <hr class="no-margin-top">
 
           <p>Made with <a href="https://nodejs.org/en/" target="_blank">Node.js</a>, <a href="https://angularjs.org" target="_blank">AngularJS</a> and <a href="https://en.wikipedia.org/wiki/Love" target="_blank">&#10084</a>.</p>
           <p>Source code available: <a href="https://github.com/sven-straubinger/sven-codes-node" target="_blank">https://github.com/sven-straubinger/sven-codes-node</a></p>

@@ -1,10 +1,44 @@
-<div class="container">
-  <div class="row vertical-centered-container" style="padding-top:26vh;padding-bottom:24vh;">
-    <div ng-repeat="account in $ctrl.profile.accounts" class="col-md-1 col-sm-2 col-xs-4 vertical-centered-item">
-      <div class="icon icon-{{account.slug}}">
-        <a href="{{account.url}}" target="_blank">
-          <img ng-src="/images/icons/svg/{{account.slug}}.svg" alt="{{account.name}} Logo">
-        </a>
+<div id="home" class="page">
+  <div class="container">
+      <div class="row">
+        <div class="page-content-center">
+          <p>Hello, world! Sven codes Node.js.
+          Sven Straubinger &mdash; Lead <a href="http://www.gopopup.com/en" target="_blank">@gopopup</a> and <a href="http://www.zeitfenster-app.de" target="_blank">@zeitfenster</a>, contributed to <a href="https://github.com/commercetools" target="_blank">@commercetools</a> and <a href="https://github.com/sphereio" target="_blank">@sphereio</a>.
+          Berlin based Mobile- and Webdeveloper and Freelancer. <a href="mailto:sven.codes@gopopup.com">Contact</a> me.</p>
+        </div>
+        <div class="page-scroll-indicator" ng-click="$ctrl.scrollTo('#projects')">
+          <img ng-src="/images/scroll-indicator-white.svg" alt="Scroll to next section.">
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="projects" class="page bg-white">
+  <h2 class="page-headline page-headline-inverse">Projects</h2>
+  <div class="container">
+    <div class="row">
+      <div class="page-content-center">
+        <div><h3>Zeitfenster</h3></div>
+        <div style="padding:0 20px;">&vert;</div>
+        <div><h3>Go&mdash;PopUp</h3></div>
+      </div>
+      <div class="page-scroll-indicator" ng-click="$ctrl.scrollTo('#accounts')">
+        <img ng-src="/images/scroll-indicator-black.svg" alt="Scroll to next section.">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="accounts" class="page">
+  <h2 class="page-headline">Find me on</h2>
+  <div class="container">
+    <div class="row">
+      <div class="page-content-center">
+        <div ng-repeat="account in $ctrl.profile.accounts" class="col-md-1 col-sm-2 col-xs-4">
+          <a href="{{account.url}}" target="_blank" class="icon icon-{{account.slug}}" ng-mouseenter="$ctrl.ambient(true, account.slug)" ng-mouseleave="$ctrl.ambient(false, account.slug)">
+            <img ng-src="/images/icons/svg/{{account.slug}}.svg" alt="{{account.name}} Logo">
+          </a>
+        </div>
       </div>
     </div>
   </div>
