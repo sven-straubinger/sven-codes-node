@@ -123,7 +123,6 @@ footer p {
 }
 
 /* Mixins Colors */
-.no-margin-top { margin-top: 0 !important; }
 .bg-turquoise { background-color: #00a091; }
 .bg-white { background-color: white; }
 
