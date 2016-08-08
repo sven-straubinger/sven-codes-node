@@ -122,6 +122,17 @@ header,
     color: black;
 }
 
+/* Projects */
+.frame {
+    border: 20px solid rgb(32,33,34);
+    background-color: transparent;
+    color: white;
+    min-height: 400px;
+    background-image: url('/images/projects/zeitfenster.png');
+    background-size: cover;
+    background-position: center center;
+}
+
 hr {
     border-color: rgb(32,33,34);
     border-bottom:0;
