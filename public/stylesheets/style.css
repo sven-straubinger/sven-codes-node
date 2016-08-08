@@ -132,12 +132,14 @@ header,
 
 .project.zeitfenster {
     background-image: url('/images/projects/zeitfenster.png');
+    background-position: left center;
 }
 
 .project.gopopup {
     background-image: url('/images/projects/gopopup.jpg');
 }
 
+/* Footer */
 footer {
     position: relative;
     text-align: center;
