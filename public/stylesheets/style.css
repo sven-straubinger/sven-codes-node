@@ -1,7 +1,7 @@
 /* style.css */
 
 body {
-    color: rgb(131, 139, 145);
+    color: rgb(131,139,145);
     background-color: black;
 
             transition: background-color .3s ease-out;
