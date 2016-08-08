@@ -79,7 +79,8 @@ footer p {
 
 .navbar-inverse .navbar-nav>li>a {
     color: inherit;
-    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing:1px;
 }
 
 .navbar-inverse .navbar-nav>.active>a,
