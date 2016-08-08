@@ -53,6 +53,19 @@ header,
     min-height: 100vh;
 }
 
+.page .container {
+    position: relative;
+}
+
+.page-headline {
+    position: absolute;
+    color: white;
+}
+
+.page-headline.page-headline-inverse {
+    color: black;
+}
+
 hr {
     border-color: rgb(32,33,34);
     border-bottom:0;
