@@ -17,6 +17,11 @@ angular.
           }
         }
 
+        this.scrollTo = function scrollTo(elementId) {
+          $("html, body").animate({ scrollTop: $(elementId).position().top }, 550, "swing");
+          return false;
+        }
+
       }
     ]
   });
