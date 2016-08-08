@@ -49,7 +49,14 @@ header,
 }
 
 .page {
-    padding-top: 50px;
+    min-height: 100vh;
+}
+
+.page-content-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
 }
 
@@ -60,6 +67,7 @@ header,
 .page-headline {
     position: absolute;
     color: white;
+    top: 50px;
     padding-left: 20px;
 }
 
@@ -108,10 +116,6 @@ footer p {
 .navbar-right li:last-child {
     padding-right: 15px;
 }
-
-/* Vertically center */
-.vertical-centered-container { text-align: center; }
-.vertical-centered-item { float: none; display: inline-block; }
 
 /* Mixins */
 .no-margin-top { margin-top: 0 !important; }

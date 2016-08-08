@@ -13,18 +13,25 @@
   <div class="container">
     <div class="row">
       <h2 class="page-headline page-headline-inverse">Projects</h2>
+      <div class="page-content-center">
+        <div><h3>Zeitfenster</h3></div>
+        <div style="padding:0 20px;">&vert;</div>
+        <div><h3>Go&mdash;PopUp</h3></div>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="page">
   <div class="container">
-    <div class="row vertical-centered-container">
-      <h2 class="page-headline">Get in touch</h2>
-      <div ng-repeat="account in $ctrl.profile.accounts" class="col-md-1 col-sm-2 col-xs-4 vertical-centered-item">
+    <div class="row">
+      <h2 class="page-headline">Find me on</h2>
+      <div class="page-content-center">
+        <div ng-repeat="account in $ctrl.profile.accounts" class="col-md-1 col-sm-2 col-xs-4">
           <a href="{{account.url}}" target="_blank" class="icon icon-{{account.slug}}" ng-mouseenter="$ctrl.ambient(true, account.slug)" ng-mouseleave="$ctrl.ambient(false, account.slug)">
             <img ng-src="/images/icons/svg/{{account.slug}}.svg" alt="{{account.name}} Logo">
           </a>
+        </div>
       </div>
     </div>
   </div>
