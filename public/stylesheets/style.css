@@ -124,6 +124,7 @@ header,
 
 /* Projects */
 .project {
+    color: black;
     min-height: 100vh;
     background-size: cover;
     background-position: center center;
