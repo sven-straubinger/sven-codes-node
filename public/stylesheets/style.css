@@ -67,7 +67,7 @@ a:hover {
 header,
 .navbar,
 .navbar-inverse {
-    background-color: inherit;
+    background-color: transparent;
 }
 
 .navbar.navbar-inverse {
