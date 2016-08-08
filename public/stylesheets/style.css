@@ -60,6 +60,7 @@ header,
 .page-headline {
     position: absolute;
     color: white;
+    padding-left: 20px;
 }
 
 .page-headline.page-headline-inverse {
