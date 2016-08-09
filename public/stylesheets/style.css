@@ -122,9 +122,8 @@ header,
     color: black;
 }
 
-hr {
-    border-color: rgb(32,33,34);
-    border-bottom:0;
+.project {
+    color: black;
 }
 
 footer {
