@@ -34,6 +34,9 @@ gulp.task('concat-js', function () {
         'public/javascripts/**/*.js',  // load all other files
         '!public/javascripts/**/*.spec.js'])  // exclude specs
         .pipe(concat('all.js'))
+        .pipe(gulp.dest('./public/dist/javascripts'))
+        .pipe(rename('all.min.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('./public/dist/javascripts'));
 })
 
