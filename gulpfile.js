@@ -36,12 +36,15 @@ gulp.task('concat-js', function () {
 })
 
 gulp.task('concat-css', function () {
-    gulp.src([
+    gulp.src([ // CSS
         // Bootstrap
         'node_modules/bootstrap/dist/css/bootstrap.css',
         'public/stylesheets/**/*.css'])
         .pipe(concat('all.css'))
         .pipe(gulp.dest('./public/dist/stylesheets'));
+    gulp.src([ // Fonts
+        'node_modules/bootstrap/dist/fonts/*'])
+        .pipe(gulp.dest('./public/dist/fonts'));
 })
 
 gulp.task('default',['concat-js', 'concat-css', 'debug']);
