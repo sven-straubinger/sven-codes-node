@@ -1,7 +1,6 @@
 // Dependencies
 var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
-var notify = require('gulp-notify');
 
 // Debug task
 gulp.task('debug', function() {
@@ -10,7 +9,6 @@ gulp.task('debug', function() {
         ext: '',
         env: {'DEBUG': 'sven-codes-node:*'} // Expression matches: `DEBUG=sven-codes-node:* node ./bin/www`
     }).on('restart', function(){
-        gulp.src('*')
-            .pipe(notify('Recompiling ...'));
+        gulp.src(['./public/javascripts/*.js']);
     })
 })
