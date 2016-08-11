@@ -2,6 +2,8 @@
 var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
 
 // Debug task
 gulp.task('debug', function() {
