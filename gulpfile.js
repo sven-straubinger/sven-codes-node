@@ -18,6 +18,9 @@ gulp.task('debug', function() {
 
 gulp.task('concat', function () {
     gulp.src([
+        'node_modules/angular/angular.js',
+        'node_modules/angular-route/angular-route.js',
+        'node_modules/angular-resource/angular-resource.js',
         'public/javascripts/**/*.module.js',  // load modules first
         'public/javascripts/**/*.js',  // load all other files
         '!public/javascripts/**/*.spec.js'])  // exclude specs
