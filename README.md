@@ -31,13 +31,10 @@ Angular Unit tests are achieved by `Karma`.
 
 * 404 and 500 status code handling
 * add caching
-* bundle JavaScript and CSS files
 * fix naming and folder structure for Angular related files
 * setup E2E tests with protractor
 * remove trailing slash --> 301 redirect
-* review Glyphicons integration
 * add credits in imprint to https://simpleicons.org
 * integrate imprint
-* change background-color on hovering icons
 * add "paging" with about-page and account-page
 * add sitemap.xml
