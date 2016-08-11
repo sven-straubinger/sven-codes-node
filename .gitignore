@@ -1,3 +1,6 @@
+# Gulp
+/public/dist
+
 # Logs
 logs
 *.log

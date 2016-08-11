@@ -1,5 +1,3 @@
-'use strict';
-
 angular.
   module('core.profile').
   factory('Profile', ['$resource',

@@ -1,5 +1,3 @@
-'use strict';
-
 // Define the `profileDetail` module
 angular.module('profileDetail', [
   'ngRoute',      // This module depends on the ngRoute module for providing the $routeParams.
