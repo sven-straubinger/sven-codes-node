@@ -10,9 +10,10 @@ gulp.task('debug', function() {
         ext: '',
         env: {'DEBUG': 'sven-codes-node:*'}, // Expression matches: `DEBUG=sven-codes-node:* node ./bin/www`
         watch: [
-            'public/javascripts'
+            'public/javascripts',
+            'public/stylesheets',
         ],
-        tasks: ['concat-js']
+        tasks: ['concat-js, concat-css']
     })
 })
 
@@ -34,4 +35,13 @@ gulp.task('concat-js', function () {
         .pipe(gulp.dest('./public/dist/javascripts'));
 })
 
-gulp.task('default',['concat-js', 'debug']);
+gulp.task('concat-css', function () {
+    gulp.src([
+        // Bootstrap
+        'node_modules/bootstrap/dist/css/bootstrap.min.css',
+        'public/stylesheets/**/*.css'])
+        .pipe(concat('all.css'))
+        .pipe(gulp.dest('./public/dist/stylesheets'));
+})
+
+gulp.task('default',['concat-js', 'concat-css', 'debug']);
