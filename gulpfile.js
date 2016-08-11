@@ -12,11 +12,11 @@ gulp.task('debug', function() {
         watch: [
             'public/javascripts'
         ],
-        tasks: ['concat']
+        tasks: ['concat-js']
     })
 })
 
-gulp.task('concat', function () {
+gulp.task('concat-js', function () {
     gulp.src([
         // jQuery
         'node_modules/jquery/dist/jquery.min.js',
@@ -34,4 +34,4 @@ gulp.task('concat', function () {
         .pipe(gulp.dest('./public/dist/javascripts'));
 })
 
-gulp.task('default',['concat', 'debug']);
+gulp.task('default',['concat-js', 'debug']);
