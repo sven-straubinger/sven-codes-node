@@ -38,7 +38,7 @@ gulp.task('concat-js', function () {
 gulp.task('concat-css', function () {
     gulp.src([
         // Bootstrap
-        'node_modules/bootstrap/dist/css/bootstrap.min.css',
+        'node_modules/bootstrap/dist/css/bootstrap.css',
         'public/stylesheets/**/*.css'])
         .pipe(concat('all.css'))
         .pipe(gulp.dest('./public/dist/stylesheets'));
