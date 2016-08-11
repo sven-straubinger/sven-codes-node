@@ -19,8 +19,8 @@ gulp.task('debug', function() {
 gulp.task('concat', function () {
     gulp.src([
         'public/javascripts/**/*.module.js',  // load modules first
-        'public/javascripts/*!(.module|.spec).js',  // load other files except modules/specs on top folder
-        'public/javascripts/**/*!(.module|.spec).js'])  // load other files except modules/specs on all subfolders
+        'public/javascripts/**/*.js',  // load all other files
+        '!public/javascripts/**/*.spec.js'])  // exclude specs
         .pipe(concat('all.js'))
         .pipe(gulp.dest('./public/dist/javascripts'));
 })
