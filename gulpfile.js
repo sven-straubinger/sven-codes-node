@@ -11,7 +11,7 @@ gulp.task('debug', function() {
         env: {'DEBUG': 'sven-codes-node:*'}, // Expression matches: `DEBUG=sven-codes-node:* node ./bin/www`
         watch: [
             'public/javascripts',
-            'public/stylesheets',
+            'public/stylesheets'
         ],
         tasks: ['concat-js, concat-css']
     })
