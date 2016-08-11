@@ -4,6 +4,7 @@ var nodemon = require('gulp-nodemon');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
+var cleanCSS = require('gulp-clean-css');
 
 // Debug task
 gulp.task('debug', function() {
@@ -46,6 +47,9 @@ gulp.task('concat-css', function () {
         'node_modules/bootstrap/dist/css/bootstrap.css',
         'public/stylesheets/**/*.css'])
         .pipe(concat('all.css'))
+        .pipe(gulp.dest('./public/dist/stylesheets'))
+        .pipe(rename('all.min.css'))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('./public/dist/stylesheets'));
     gulp.src([ // Fonts
         'node_modules/bootstrap/dist/fonts/*'])
