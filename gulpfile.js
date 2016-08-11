@@ -17,7 +17,7 @@ gulp.task('debug', function() {
 })
 
 gulp.task('concat', function () {
-    gulp.src(['public/javascripts/*.js'])
+    gulp.src(['public/javascripts/**/*.js'])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('./public/dist/javascripts'));
 })
