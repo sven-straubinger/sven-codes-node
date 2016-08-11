@@ -20,6 +20,8 @@ gulp.task('concat', function () {
     gulp.src([
         // jQuery
         'node_modules/jquery/dist/jquery.min.js',
+        // Bootstrap
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
         // Angular basics
         'node_modules/angular/angular.js',
         'node_modules/angular-route/angular-route.js',
