@@ -1,5 +1,3 @@
-'use strict';
-
 // Register component
 angular.
   module('profileList').

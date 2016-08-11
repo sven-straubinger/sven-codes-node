@@ -1,5 +1,3 @@
-'use strict';
-
 // Scroll to sections
 $("*[href='#!/#projects']").click(function() {
   $("html, body").animate({ scrollTop: $('#projects').position().top }, 500, "swing");
