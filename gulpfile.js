@@ -18,10 +18,13 @@ gulp.task('debug', function() {
 
 gulp.task('concat', function () {
     gulp.src([
+        // jQuery
         'node_modules/jquery/dist/jquery.min.js',
+        // Angular basics
         'node_modules/angular/angular.js',
         'node_modules/angular-route/angular-route.js',
         'node_modules/angular-resource/angular-resource.js',
+        // Angular modules and components
         'public/javascripts/**/*.module.js',  // load modules first
         'public/javascripts/**/*.js',  // load all other files
         '!public/javascripts/**/*.spec.js'])  // exclude specs
