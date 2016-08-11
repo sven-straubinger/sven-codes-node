@@ -24,3 +24,5 @@ gulp.task('concat', function () {
         .pipe(concat('all.js'))
         .pipe(gulp.dest('./public/dist/javascripts'));
 })
+
+gulp.task('default',['concat', 'debug']);
