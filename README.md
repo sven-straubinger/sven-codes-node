@@ -38,3 +38,4 @@ Angular Unit tests are achieved by `Karma`.
 * integrate imprint
 * add "paging" with about-page and account-page
 * add sitemap.xml
+* integrate [gulp-svg-sprites](https://www.npmjs.com/package/gulp-svg-sprites)
