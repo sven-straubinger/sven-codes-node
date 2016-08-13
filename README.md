@@ -1,6 +1,8 @@
 # sven-codes-node
 Source code of the [sven.codes](http://sven.codes) website written in Node.js and AngularJS. Workflow is automated with [gulp](http://gulpjs.com).
 
+Data is loaded via an API endpoint.
+
 ## Install
 
 1. Install [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com)
