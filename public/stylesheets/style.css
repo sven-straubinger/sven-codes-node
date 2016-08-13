@@ -10,12 +10,14 @@ body {
     -webkit-transition: background-color .3s ease-out;
 }
 
-a,
-a:hover {
+main {
+    min-height: 100vh;
+}
+
+a, a:hover {
     color: white;
 }
 
-/* Icons */
 .icon {
     border: 1px solid white;
     border-radius: 50%;
@@ -24,11 +26,9 @@ a:hover {
     display: block;
 }
 
-/* Icons */
 .icon:hover { padding: 18px; }
 .icon img { width: 100%; }
 
-/* Header */
 header,
 .navbar,
 .navbar-inverse {
