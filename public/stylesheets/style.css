@@ -18,6 +18,11 @@ a, a:hover {
     color: white;
 }
 
+strong {
+    font-weight: bold;
+    color: white;
+}
+
 .icon {
     border: 1px solid white;
     border-radius: 50%;
