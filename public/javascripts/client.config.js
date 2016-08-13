@@ -8,9 +8,6 @@ angular
         when('/', {
           template: '<profile-list></profile-list>'
         }).
-        when('/profiles/:slug', {
-          template: '<profile-detail></profile-detail>'
-        }).
         when('/imprint', {
           template: '<static-content></static-content>'
         }).
