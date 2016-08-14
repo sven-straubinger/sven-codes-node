@@ -99,6 +99,7 @@ header,
 }
 
 h3 {
+    color: black;
     font-size: inherit;
     font-weight: inherit;
     text-transform: uppercase;
@@ -110,6 +111,7 @@ h3 {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .page-scroll-indicator {
@@ -130,10 +132,6 @@ h3 {
 }
 
 .page-headline.page-headline-inverse {
-    color: black;
-}
-
-.project {
     color: black;
 }
 
