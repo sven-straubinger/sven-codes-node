@@ -136,6 +136,10 @@ h3 {
     color: black;
 }
 
+.project {
+    padding: 20px;
+}
+
 footer {
     position: relative;
     text-align: center;
