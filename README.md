@@ -1,8 +1,6 @@
 # sven-codes-node
 Source code of the [sven.codes](http://sven.codes) website written in Node.js and AngularJS. Workflow is automated with [gulp](http://gulpjs.com).
 
-Data is loaded via an API endpoint.
-
 ## Install
 
 1. Install [Node.js](https://nodejs.org) and [npm](https://www.npmjs.com)
@@ -33,7 +31,7 @@ Angular Unit tests are achieved by `Karma`.
 
 * 404 and 500 status code handling
 * add caching
-* fix naming and folder structure for Angular related files
+* update naming and folder structure for Angular related files
 * setup E2E tests with protractor
 * remove trailing slash --> 301 redirect
 * add credits in imprint to https://simpleicons.org
