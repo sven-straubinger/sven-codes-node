@@ -151,12 +151,11 @@ h3 {
 .project a:hover { color: black; }
 
 .account {
-    width: 6%;
-    min-width: 50px;
+    width: 65px;
     position: relative;
     min-height: 1px;
     margin-right: 15px;
-    margin-left: 15px
+    margin-left: 15px;
 }
 
 footer {
