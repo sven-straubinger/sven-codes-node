@@ -8,7 +8,7 @@
 */
 
 @media (min-width: 767px) {
-    #home.page {
+    .page-content-center {
         font-size: 1.8em;
         font-weight: 300;
     }
