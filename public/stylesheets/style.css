@@ -143,6 +143,9 @@ footer p {
 }
 
 /* Mixins Colors */
+.white { color: white; }
+
+/* Mixins Background-Colors */
 .bg-turquoise { background-color: #00a091; }
 .bg-white { background-color: white; }
 
