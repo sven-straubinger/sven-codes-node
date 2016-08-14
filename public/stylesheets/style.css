@@ -140,6 +140,9 @@ h3 {
     padding: 20px;
 }
 
+.project a,
+.project a:hover { color: black; }
+
 footer {
     position: relative;
     text-align: center;
