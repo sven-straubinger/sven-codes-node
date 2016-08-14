@@ -7,6 +7,10 @@
 @screen-lg-min: 1200px;
 */
 
-@media (min-width: 767px) {
-
+@media (max-width: 767px) {
+    body header,
+    body .navbar,
+    body .navbar-inverse {
+        background-color: black;
+    }
 }
