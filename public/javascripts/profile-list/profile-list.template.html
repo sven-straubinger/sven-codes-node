@@ -46,7 +46,7 @@
   <div class="container">
     <div class="row">
       <div class="page-content-center">
-        <div ng-repeat="account in $ctrl.profile.accounts" class="col-md-1 col-sm-2 col-xs-4">
+        <div ng-repeat="account in $ctrl.profile.accounts" class="account">
           <a href="{{account.url}}" target="_blank" class="icon icon-{{account.slug}}" ng-mouseenter="$ctrl.ambient(true, account.slug)" ng-mouseleave="$ctrl.ambient(false, account.slug)">
             <img ng-src="/images/icons/svg/{{account.slug}}.svg" alt="{{account.name}} Logo">
           </a>

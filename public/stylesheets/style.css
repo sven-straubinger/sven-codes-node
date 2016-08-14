@@ -112,7 +112,7 @@ h3 {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 44px 20px;
 
     font-size: 1.8em;
     font-weight: 300;
@@ -142,11 +142,20 @@ h3 {
 }
 
 .project {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .project a,
 .project a:hover { color: black; }
+
+.account {
+    width: 8.33333333%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
 
 footer {
     position: relative;
