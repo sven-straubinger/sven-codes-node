@@ -18,10 +18,6 @@
         "name": "LinkedIn",
         "url": "https://de.linkedin.com/in/sven-straubinger-01981378"
     }, {
-        "slug": "snapchat",
-        "name": "Snapchat",
-        "url": "https://www.snapchat.com"
-    }, {
         "slug": "stackoverflow",
         "name": "Stack Overflow",
         "url": "http://stackoverflow.com/users/2561539/svenson"
@@ -36,5 +32,10 @@
     }]
 }, {
     "slug": "axel",
-    "public": false
+    "public": false,
+    "accounts": [{
+        "slug": "snapchat",
+        "name": "Snapchat",
+        "url": "https://www.snapchat.com"
+    }]
 }]
