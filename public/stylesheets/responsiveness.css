@@ -11,6 +11,12 @@
     body header,
     body .navbar,
     body .navbar-inverse {
-        background-color: black;
+        background-color: black !important;
+    }
+
+    body .navbar-inverse .navbar-toggle:focus,
+    body .navbar-inverse .navbar-toggle:hover,
+    body .navbar-inverse .navbar-toggle {
+        border-color: black !important;
     }
 }
