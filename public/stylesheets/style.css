@@ -98,6 +98,12 @@ header,
     margin: 0;
 }
 
+h3 {
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: uppercase;
+}
+
 .page-content-center {
     display: flex;
     flex-direction: row;
