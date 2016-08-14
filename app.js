@@ -13,9 +13,9 @@ var routeApi = require('./routes/api');
 // Init app
 var app = express();
 
-// Basic auth
+/* // Basic auth
 var auth = require('./routes/auth');
-app.use(auth);
+app.use(auth); */
 
 // Defaults
 app.use(logger('dev'));
