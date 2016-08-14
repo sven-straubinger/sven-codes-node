@@ -18,11 +18,6 @@ a, a:hover {
     color: white;
 }
 
-strong {
-    font-weight: bold;
-    color: white;
-}
-
 .icon {
     border: 1px solid white;
     border-radius: 50%;
@@ -167,6 +162,11 @@ footer {
 
 footer p {
     margin: 0 0 4px;
+}
+
+#imprint {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* Mixins Colors */
