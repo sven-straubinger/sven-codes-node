@@ -26,13 +26,16 @@ strong {
 .icon {
     border: 1px solid white;
     border-radius: 50%;
-    padding: 14px;
     margin: 10px 0;
     display: block;
 }
 
-.icon:hover { padding: 18px; }
-.icon img { width: 100%; }
+.icon img {
+    width: 100%;
+    display: block;
+    padding: 14px;
+}
+.icon:hover img { padding: 18px; }
 
 header,
 .navbar,
