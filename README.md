@@ -40,4 +40,4 @@ Angular Unit tests are achieved by `Karma`.
 * add sitemap.xml
 * integrate [gulp-svg-sprites](https://www.npmjs.com/package/gulp-svg-sprites)
 * integrate [PostCSS](http://postcss.org)
-* use HTTPS context
+* use the HTTPS context
