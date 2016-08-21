@@ -12,14 +12,14 @@ router.get('/', function(req, res, next) {
 
 // GET - robots.txt
 router.get('/robots.txt', function(req, res, next) {
-    fs.readFile(path.resolve("views/robots.txt"), "utf8", function(err, data) {
+    fs.readFile(path.resolve("views/seo/robots.txt"), "utf8", function(err, data) {
         res.end(data);
     });
 });
 
 // GET - humans.txt
 router.get('/humans.txt', function(req, res, next) {
-    fs.readFile(path.resolve("views/humans.txt"), "utf8", function(err, data) {
+    fs.readFile(path.resolve("views/seo/humans.txt"), "utf8", function(err, data) {
         res.end(data);
     });
 });
@@ -27,6 +27,13 @@ router.get('/humans.txt', function(req, res, next) {
 // GET - browserconfig.xml
 router.get('/browserconfig.xml', function(req, res, next) {
     fs.readFile(path.resolve("views/browserconfig.xml"), "utf8", function(err, data) {
+        res.end(data);
+    });
+});
+
+// GET - sitemap.xml
+router.get('/sitemap.xml', function(req, res, next) {
+    fs.readFile(path.resolve("views/seo/sitemap.xml"), "utf8", function(err, data) {
         res.end(data);
     });
 });
