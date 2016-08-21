@@ -35,9 +35,6 @@ Angular Unit tests are achieved by `Karma`.
 * setup E2E tests with protractor
 * remove trailing slash --> 301 redirect
 * add credits in imprint to https://simpleicons.org
-* integrate imprint
-* add "paging" with about-page and account-page
-* add sitemap.xml
 * integrate [gulp-svg-sprites](https://www.npmjs.com/package/gulp-svg-sprites)
 * integrate [PostCSS](http://postcss.org)
 * use the HTTPS context
