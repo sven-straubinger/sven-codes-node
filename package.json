@@ -1,6 +1,6 @@
 {
   "name": "sven-codes-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "Source code of the \"sven.codes\" website. http://sven.codes",
   "main": "app.js",
