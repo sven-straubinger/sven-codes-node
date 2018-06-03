@@ -179,12 +179,20 @@ footer p {
     background-color: black;
 }
 
-#terms-note #terms-note-close {
+#terms-note #terms-note-close-container {
     position: absolute;
-    right: 20px;
     top: 0;
+    right: 0;
     height: 100%;
-    display: inline-block;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#terms-note #terms-note-close {
+    font-size: 1.5em;
+    padding: 0 40px;
 }
 
 /* Mixins Colors */
