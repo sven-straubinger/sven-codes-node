@@ -58,13 +58,13 @@
       <div class="container">
         <div class="row">
 
-          <p>Made with <a href="https://nodejs.org/en/" target="_blank">Node.js</a>, <a href="https://angularjs.org" target="_blank">AngularJS</a> and <a href="https://en.wikipedia.org/wiki/Love" target="_blank">&#10084</a>.</p>
+          <p>Made with <a href="https://nodejs.org/en/" target="_blank">Node.js</a> and <a href="https://angularjs.org" target="_blank">AngularJS</a>.</p>
           <p>Source code available: <a href="https://github.com/sven-straubinger/sven-codes-node" target="_blank">https://github.com/sven-straubinger/sven-codes-node</a></p>
           <p>
             <span>&copy; Sven Straubinger</span>
             <span>
               <script>document.write(new Date().getFullYear());</script>
-              <noscript>2016</noscript>
+              <noscript>2018</noscript>
             </span>
             <span>&verbar;</span>
             <a href="#!/imprint">Imprint</a>
@@ -73,6 +73,40 @@
         </div>
       </div>
     </footer>
+
+    <div id="terms-note" onclick="acceptTerms(event);">
+      Surprise &#127850; We use cookies to optimize the website and user-experience. By using this website you agree to the use of cookies and the <a href="#!/imprint" onclick="stopPropagation(event);">Terms of Service</a>.
+      <div id="terms-note-close-container">
+        <span id="terms-note-close">x</span>
+      </div>
+    </div>
+
+    <script>
+      function acceptTerms(event) {
+        event.preventDefault();
+        hideTermsNote();
+        setTermsCookie();
+      }
+
+      function hideTermsNote() {
+        document.getElementById("terms-note").style.display = 'none';
+      };
+
+      function setTermsCookie() {
+        var expiry = new Date();
+        expiry.setTime(expiry.getTime()+(365*24*60*60*1000));
+        document.cookie = "termsAccepted=yes; expires=" + expiry.toGMTString();
+      }
+
+      function stopPropagation(event) {
+        event.stopPropagation();
+      }
+
+      // Check for existing 'terms'-cookie
+      if (document.cookie.indexOf("termsAccepted=") >= 0) {
+        hideTermsNote(); // cookie exists, hide terms ....
+      }
+    </script>
 
     <!-- Combined JavaScript files -->
     <script src="/dist/javascripts/all.min.js"></script>
@@ -83,7 +117,9 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-82440598-1','auto');ga('send','pageview');
+      ga('create','UA-82440598-1','auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send','pageview');
     </script>
 
   </body>
