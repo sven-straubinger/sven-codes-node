@@ -74,10 +74,10 @@
       </div>
     </footer>
 
-    <div id="terms-note">
-      Surprise &#127850; We use cookies to optimize the website and user-experience. By using this website you agree to the use of cookies and the <a href="#!/imprint"">Terms of Service</a>.
+    <div id="terms-note" onclick="acceptTerms(event);">
+      Surprise &#127850; We use cookies to optimize the website and user-experience. By using this website you agree to the use of cookies and the <a href="#!/imprint" onclick="stopPropagation(event);">Terms of Service</a>.
       <div id="terms-note-close-container">
-        <a id="terms-note-close" href="#" onclick="acceptTerms(event)">x</a>
+        <span id="terms-note-close">x</span>
       </div>
     </div>
 
@@ -93,14 +93,18 @@
       };
 
       function setTermsCookie() {
-          var expiry = new Date();
-          expiry.setTime(expiry.getTime()+(365*24*60*60*1000));
-          document.cookie = "termsAccepted=yes; expires=" + expiry.toGMTString();
+        var expiry = new Date();
+        expiry.setTime(expiry.getTime()+(365*24*60*60*1000));
+        document.cookie = "termsAccepted=yes; expires=" + expiry.toGMTString();
+      }
+
+      function stopPropagation(event) {
+        event.stopPropagation();
       }
 
       // Check for existing 'terms'-cookie
       if (document.cookie.indexOf("termsAccepted=") >= 0) {
-          hideTermsNote(); // cookie exists, hide terms ....
+        hideTermsNote(); // cookie exists, hide terms ....
       }
     </script>
 
