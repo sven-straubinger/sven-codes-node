@@ -74,6 +74,34 @@
       </div>
     </footer>
 
+    <div id="terms-note">
+      Surprise &#127850; We use cookies to optimize the website and user-experience. By using this website you agree to the use of cookies. <a href="/terms">More privacy information</a>.
+      <a id="terms-note-close" href="#" onclick="acceptTerms(event)">Close</a>
+    </div>
+
+    <script>
+      function acceptTerms(event) {
+        event.preventDefault();
+        hideTermsNote();
+        setTermsCookie();
+      }
+
+      function hideTermsNote() {
+        document.getElementById("terms-note").style.display = 'none';
+      };
+
+      function setTermsCookie() {
+          var expiry = new Date();
+          expiry.setTime(expiry.getTime()+(365*24*60*60*1000));
+          document.cookie = "termsAccepted=yes; expires=" + expiry.toGMTString();
+      }
+
+      // Check for existing 'terms'-cookie
+      if (document.cookie.indexOf("termsAccepted=") >= 0) {
+          hideTermsNote(); // cookie exists, hide terms ....
+      }
+    </script>
+
     <!-- Combined JavaScript files -->
     <script src="/dist/javascripts/all.min.js"></script>
 

@@ -169,6 +169,24 @@ footer p {
     padding-bottom: 50px;
 }
 
+#terms-note {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 22px 80px 22px 80px;
+    background-color: black;
+}
+
+#terms-note #terms-note-close {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    height: 100%;
+    display: inline-block;
+}
+
 /* Mixins Colors */
 .white { color: white; }
 
