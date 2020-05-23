@@ -27,14 +27,6 @@ Angular Unit tests are achieved by `Karma`.
 * Run `npm run-script test-client` for hot reloaded testing
 * Run `npm run-script test-client-single-run` for a single test run
 
-## TODOs
+## Static
 
-* 404 and 500 status code handling
-* add caching
-* update naming and folder structure for Angular related files
-* setup E2E tests with protractor
-* remove trailing slash --> 301 redirect
-* add credits in imprint to https://simpleicons.org
-* integrate [gulp-svg-sprites](https://www.npmjs.com/package/gulp-svg-sprites)
-* integrate [PostCSS](http://postcss.org)
-* use the HTTPS context
+**Please note:** HTML-files have been rendered and distributed as static files within the `docs` folder.
