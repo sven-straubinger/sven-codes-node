@@ -29,4 +29,4 @@ Angular Unit tests are achieved by `Karma`.
 
 ## Static
 
-**Please note:** HTML-files have been rendered and distributed as static files within the `static` folder.
+**Please note:** HTML-files have been rendered and distributed as static files within the `docs` folder.
