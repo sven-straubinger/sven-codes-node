@@ -156,50 +156,134 @@
       </div>
     </footer>
 
-    <div id="terms-note" onclick="acceptTerms(event);" style="display: none;">
-      Surprise 🍪 We use cookies to optimize the website and user-experience. By using this website you agree to the use of cookies and the <a href="imprint.html" onclick="stopPropagation(event);">Terms of Service</a>.
-      <div id="terms-note-close-container">
-        <span id="terms-note-close">x</span>
+    <!-- COOKIE INTEGRATION - Begin -->
+
+    <div id="cookie-note">
+      <div>Surprise &#127850; We would love to use Cookies to optimize the website and user-experience. Please see the <a class="cookie-note-privacy-link" href="/privacy.html">Terms of Service & Privacy</a> section to learn more about how Cookies are used.</div>
+      <div>
+        <span class="cookie-note-button" onclick="declineCookies(event);">Decline Cookies</span>
+        <span class="cookie-note-button cookie-note-button-allow" onclick="allowCookies(event);">Allow Cookies</span>
+      </div>
+      <div id="cookie-note-close-container" onclick="declineCookies(event);">
+        <span id="cookie-note-close">&#x292C;</span>
       </div>
     </div>
 
+    <div id="cookie-container"></div>
+
     <script>
-      function acceptTerms(event) {
+      function allowCookies(event) {
         event.preventDefault();
-        hideTermsNote();
-        setTermsCookie();
+
+        hideCookieNote();
+        setCookieFlag();
+        setCookies();
       }
 
-      function hideTermsNote() {
-        document.getElementById("terms-note").style.display = 'none';
+      function declineCookies(event) {
+        event.preventDefault();
+
+        hideCookieNote();
+      }
+
+      function hideCookieNote() {
+        document.getElementById("cookie-note").style.display = 'none';
       };
 
-      function setTermsCookie() {
+      function setCookieFlag() {
         var expiry = new Date();
         expiry.setTime(expiry.getTime()+(365*24*60*60*1000));
-        document.cookie = "termsAccepted=yes; expires=" + expiry.toGMTString();
+        document.cookie = "cookiesAllowedV1=yes; expires=" + expiry.toGMTString();
       }
 
-      function stopPropagation(event) {
-        event.stopPropagation();
+      function setCookies() {
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-82440598-1','auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send','pageview');
       }
 
-      // Check for existing 'terms'-cookie
-      if (document.cookie.indexOf("termsAccepted=") >= 0) {
-        hideTermsNote(); // cookie exists, hide terms ....
+      // Check for existing cookie-flag
+      if (document.cookie.indexOf("cookiesAllowedV1=") >= 0) {
+        hideCookieNote();    // hide note ....
+        setCookies();        // set allowed cookies ...
       }
+
     </script>
 
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-82440598-1','auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send','pageview');
-    </script>
+    <style type="text/css">
+
+      #cookie-note {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        color: white;
+        background-color: black;
+        font-weight: 300;
+        text-align: center;
+
+        padding: 22px 80px 22px 80px;
+      }
+
+      #cookie-note #cookie-note-close-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #cookie-note #cookie-note-close {
+        color: white;
+        font-size: 1.25em;
+        padding: 0 40px;
+      }
+
+      #cookie-note .cookie-note-privacy-link {
+        text-decoration: underline;
+      }
+
+      #cookie-note .cookie-note-button {
+        cursor: pointer;
+        font-weight: normal;
+        padding: 8px 12px;
+        margin: 25px 5px 10px 5px;
+        border: 1px solid white;
+        display: inline-block;
+        min-width: 150px;
+
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+
+      #cookie-note .cookie-note-button:hover {
+        background-color: white;
+        color: black;
+      }
+
+      #cookie-note .cookie-note-button.cookie-note-button-allow {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      #cookie-note .cookie-note-button.cookie-note-button-allow:hover {
+        color: #fff;
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
+
+    </style>
+
+    <!-- COOKIE INTEGRATION - End -->
 
     <script>
       $(document).ready(function() {
