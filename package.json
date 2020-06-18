@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/sven-straubinger/sven-codes-node#readme",
   "dependencies": {
-    "angular": "^1.5.8",
+    "angular": "^1.8.0",
     "angular-resource": "^1.5.8",
     "angular-route": "^1.5.8",
     "basic-auth": "^1.0.4",
